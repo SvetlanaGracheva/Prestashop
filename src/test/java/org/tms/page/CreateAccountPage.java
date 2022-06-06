@@ -3,7 +3,7 @@ package org.tms.page;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CreateanaccountPage extends Page {
+public class CreateAccountPage extends Page {
     @FindBy(xpath = "//input[@id='id_gender2']") //гр-н или г-жа
     private WebElement title;
 
@@ -46,20 +46,52 @@ public class CreateanaccountPage extends Page {
     public void clicktitle() {
         title.click();
     }
-    public CreateanaccountPage fillinfirstname(String firstnamestring) {
+
+    public CreateAccountPage fillinfirstname(String firstnamestring) {
         firstname.clear();
         firstname.sendKeys(firstnamestring);
         return this;
     }
-    public CreateanaccountPage fillinlastname(String lastnamestring) {
+
+    public CreateAccountPage fillinlastname(String lastnamestring) {
         lastname.clear();
         lastname.sendKeys(lastnamestring);
         return this;
     }
-    public CreateanaccountPage fillinpassword(String passwordstring) {
+
+    public CreateAccountPage fillinpassword(String passwordstring) {
         passwordcreate.clear();
         passwordcreate.sendKeys(passwordstring);
         return this;
+    }
+
+    public void clickdateofbirthdaysButton() {
+        dateofbirthdays.click();
+    }
+
+    public void clickdateofbirthdayschoice() {
+        dateofbirthdayschoice.click();
+    }
+    public void clickdateofbirthmonthsButton() {
+        dateofbirthmonths.click();
+    }
+    public void clickdateofbirthmonthschoice() {
+        dateofbirthmonthschoice.click();
+    }
+    public void clickdateofbirthyears() {
+        dateofbirthyears.click();
+    }
+    public void clickdateofbirthyearschoice(){
+        dateofbirthyearschoice.click();
+    }
+    public void clickcheckboxnewsletter(){
+        checkboxnewsletter.click();
+    }
+    public void clickcheckboxoffers(){
+        checkboxoffers.click();
+    }
+    public void clickregisterButton(){
+        registerButton.click();
     }
 
 }

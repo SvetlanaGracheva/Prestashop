@@ -16,8 +16,16 @@ public class LoginPage extends Page {
     @FindBy(xpath = "//input[@id='email_create']") //ввод адреса для регистрации
     private WebElement emailcreate;
 
-    @FindBy (xpath = "//i[@class='icon-user left']")
+    @FindBy(xpath = "//i[@class='icon-user left']")
     private WebElement createanaccountButton;
+
+    @FindBy(xpath = "//li[contains(text(), 'Authentication failed.')]")
+    private WebElement authenticationfailed;
+
+    public LoginPage openPage(String url) {
+        driver.get(url);
+        return this;
+    }
 
 
     public LoginPage fillinemailaddress(String addresemail) {
@@ -41,10 +49,23 @@ public class LoginPage extends Page {
         emailcreate.sendKeys(createemail);
         return this;
     }
-    public void clickcreateanaccountButton(){
+
+    public void clickcreateanaccountButton() {
         createanaccountButton.click();
     }
 
+    public String getTextAuthenticationFailed() {
+        return authenticationfailed.getText();
+    }
+    @FindBy(xpath = "//h1[contains(text(), 'Authentication')]") // вход с неверным паролем
+    private WebElement mainObjectOfMyAccountPage;
 
+    public String getTextOfNameOfMainPageSection (){
+        return mainObjectOfMyAccountPage.getText();
+
+    }
 }
+
+
+
 
