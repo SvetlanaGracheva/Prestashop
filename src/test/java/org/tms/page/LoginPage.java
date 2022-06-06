@@ -19,6 +19,9 @@ public class LoginPage extends Page {
     @FindBy (xpath = "//i[@class='icon-user left']")
     private WebElement createanaccountButton;
 
+    @FindBy (xpath = "//li[contains(text(), 'Authentication failed.')]")
+    private WebElement authenticationfailed;
+
 
     public LoginPage fillinemailaddress(String addresemail) {
         emailaddress.clear();
@@ -44,7 +47,11 @@ public class LoginPage extends Page {
     public void clickcreateanaccountButton(){
         createanaccountButton.click();
     }
-
-
+    public String getTextAuthenticationFailed (){
+    return authenticationfailed.getText();
+    }
 }
+
+
+
 
