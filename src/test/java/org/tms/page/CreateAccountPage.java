@@ -3,7 +3,7 @@ package org.tms.page;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CreateanaccountPage extends Page {
+public class CreateAccountPage extends Page {
     @FindBy(xpath = "//input[@id='id_gender2']") //гр-н или г-жа
     private WebElement title;
 
@@ -17,10 +17,10 @@ public class CreateanaccountPage extends Page {
     private WebElement passwordcreate;
 
     @FindBy(xpath = "//select[@id='days']")
-    private WebElement dateofbirthdays;
+    private WebElement dateOfBirthdays;
 
     @FindBy(xpath = "//select[@id='days']//option[@value='17']") //выбор даты рождения
-    private WebElement dateofbirthdayschoice;
+    private WebElement dateOfBirthDaysChoice;
 
     @FindBy(xpath = "//select[@id='months']")
     private WebElement dateofbirthmonths;
@@ -46,20 +46,52 @@ public class CreateanaccountPage extends Page {
     public void clicktitle() {
         title.click();
     }
-    public CreateanaccountPage fillinfirstname(String firstnamestring) {
+
+    public CreateAccountPage fillinfirstname(String firstnamestring) {
         firstname.clear();
         firstname.sendKeys(firstnamestring);
         return this;
     }
-    public CreateanaccountPage fillinlastname(String lastnamestring) {
+
+    public CreateAccountPage fillinlastname(String lastnamestring) {
         lastname.clear();
         lastname.sendKeys(lastnamestring);
         return this;
     }
-    public CreateanaccountPage fillinpassword(String passwordstring) {
+
+    public CreateAccountPage fillinpassword(String passwordstring) {
         passwordcreate.clear();
         passwordcreate.sendKeys(passwordstring);
         return this;
+    }
+
+    public void clickdateofbirthdaysButton() {
+        dateOfBirthdays.click();
+    }
+
+    public void clickdateofbirthdayschoice() {
+        dateOfBirthDaysChoice.click();
+    }
+    public void clickDateOfBirthMonthsButton() {
+        dateofbirthmonths.click();
+    }
+    public void clickdateofbirthmonthschoice() {
+        dateofbirthmonthschoice.click();
+    }
+    public void clickdateofbirthyears() {
+        dateofbirthyears.click();
+    }
+    public void clickdateofbirthyearschoice(){
+        dateofbirthyearschoice.click();
+    }
+    public void clickcheckboxnewsletter(){
+        checkboxnewsletter.click();
+    }
+    public void clickcheckboxoffers(){
+        checkboxoffers.click();
+    }
+    public void clickregisterButton(){
+        registerButton.click();
     }
 
 }
