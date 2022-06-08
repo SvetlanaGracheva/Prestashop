@@ -10,6 +10,11 @@ public class CartPage extends Page{
     @FindBy(xpath = "//a[@id='3_13_0_0']")
     private WebElement removeButton; //кнопка удалить
 
+    @FindBy(xpath = "//a[@class='login']")
+    private WebElement signInButton; //кнопка войти
+
+
+
     public String descriptionItemInTheCart(){
         return ItemInTheCart.getText(); // получить название товара в корзине
     }
@@ -17,4 +22,5 @@ public class CartPage extends Page{
     public void clickRemoveButton(){
         removeButton.click(); //нажать удалить
     }
+
 }

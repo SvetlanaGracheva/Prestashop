@@ -18,7 +18,7 @@ public class DriverSingleton {
         return instance.get();
     }
 
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         return driver;
     }
 
