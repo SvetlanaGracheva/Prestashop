@@ -5,26 +5,24 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.tms.page.LoginPage;
 import org.tms.page.MyAccountPage;
-import org.tms.page.Page;
-import org.tms.service.LoginPageFalseService;
+import org.tms.service.LoginInvalidPageService;
+import org.tms.service.LoginPageService;
 
-import static org.tms.util.Constants.EXPECTED_TEXT_AUTHENTICATION_FAILED;
+public class LoginPageInvalidTest extends BaseTest{
 
-
-public class LoginPageFalseTest extends Page {
-     LoginPageFalseService loginPageFalseService;;
+    LoginInvalidPageService loginInvalidPageService;
 
     @BeforeClass
     public void setUp() {
-        loginPageFalseService = new LoginPageFalseService();
+        loginInvalidPageService= new LoginInvalidPageService();
+        LoginPage loginPage = new LoginPage();
     }
 
     @Test
     public void loginFalseTest(){
-        LoginPage loginPage= loginPageFalseService.login();
+        LoginPage loginPage=  loginInvalidPageService.login();
         String actualTextOfMainPage=loginPage.getTextAuthenticationFailed();
-        String expectedTextAuthenticationFailed= "There is 1 error";
+        String expectedTextAuthenticationFailed= loginPage.getTextOfNameOfMainPageSection();
         Assert.assertEquals(actualTextOfMainPage,expectedTextAuthenticationFailed, "The actual text of the page does not match expected!");
     }
-
 }

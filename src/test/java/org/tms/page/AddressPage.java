@@ -2,8 +2,6 @@ package org.tms.page;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.tms.driver.DriverSingleton;
 
 
 public class AddressPage extends Page {
@@ -28,16 +26,21 @@ public class AddressPage extends Page {
     @FindBy(xpath = "//input[@id='phone_mobile']")
     private WebElement phoneMobile;
 
+    @FindBy(xpath = "//select[@id='id_state']")
+    private WebElement stateButton;
+
     @FindBy(xpath = "//select[@id='id_state']//option[@value='337']")
-    private WebElement state;
+    private WebElement stateNameButton;
 
     @FindBy(xpath = "//button[@id='submitAddress']")
-    private WebElement saveAddressButoon;
+    private WebElement saveAddressButton;
 
     @FindBy(xpath = "//strong[contains(text(), 'Your addresses are listed below.')]")
     private WebElement messageAddress;
 
-    WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 15);
+    @FindBy(xpath = "//h3[contains(text(), 'My address')]")
+    private WebElement blockNameMyAddress;
+
 
     public AddressPage openPage(String url) {
         driver.get(url);
@@ -47,48 +50,66 @@ public class AddressPage extends Page {
     public AddressPage fillInFirstName(String firstnamestring) {
         firstName.clear();
         firstName.sendKeys(firstnamestring);
-        return this;}
+        return this;
+    }
 
     public AddressPage fillInLastName(String lastNamestring) {
         firstName.clear();
         firstName.sendKeys(lastNamestring);
-        return this;}
+        return this;
+    }
+
+    public AddressPage fillAddress(String addressstring) {
+        address1.clear();
+        address1.sendKeys(addressstring);
+        return this;
+    }
+
 
     public AddressPage fillInZipCode(String zipcodestring) {
         firstName.clear();
         firstName.sendKeys(zipcodestring);
-        return this;}
+        return this;
+    }
 
     public AddressPage fillInCity(String citystring) {
         firstName.clear();
         firstName.sendKeys(citystring);
-        return this;}
+        return this;
+    }
 
     public AddressPage fillInPhoneHome(String phoneHomestring) {
         firstName.clear();
         firstName.sendKeys(phoneHomestring);
-        return this;}
+        return this;
+    }
 
     public AddressPage fillInPhoneMobile(String phoneMobilestring) {
         firstName.clear();
         firstName.sendKeys(phoneMobilestring);
-        return this;}
+        return this;
+    }
 
+    public void clickDropDownListButton() {
+        stateButton.click();
+    }
 
-    public void clickDropDownListButton(){
-            state.click();}
+    public void clickNameStateButton () {
+        stateNameButton.click();
+    }
 
-    public void clickSaveAddressButton(){
-        saveAddressButoon.click();}
+    public void clickSaveAddressButton() {
+        saveAddressButton.click();
+    }
 
-    public String getTheTextAboutCreatingNewAddress(){
-        return messageAddress.getText();
-
-}
-
-
-
-
-
+    public String getTheTextAboutCreatingNewAddress() {
+        return messageAddress.getText(); // сообщение о создании адресе
 
     }
+    public String getTheTextBlockNameMyAddress() {
+        return blockNameMyAddress.getText(); // текст о наличии блоа  адрес
+
+}}
+
+
+

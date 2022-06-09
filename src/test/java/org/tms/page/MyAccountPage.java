@@ -5,18 +5,21 @@ import org.openqa.selenium.support.FindBy;
 
 public class MyAccountPage extends Page {
     @FindBy(xpath = "//h1[contains(text(), 'My account')]")
-    private WebElement pagename;
+    private WebElement pageName;
 
     @FindBy(xpath = "//p[contains(text(), 'Your account has been created.')]")
-    private WebElement messageAccountCreate;//сообщение аккаунт создан
+    private WebElement messageAccountCreate;  //сообщение аккаунт создан
 
     @FindBy(xpath = "//a[@title='Women']")
     private WebElement pageTitleWomenButton;
 
+    @FindBy(xpath = "//span[contains(text(), 'Add my first address')]")
+    private WebElement nameAddMyFirstAddressButton; //добавить мой адрес
+
 
     public String getTextPageName() //получить название страницы
     {
-        return pagename.getText();
+        return pageName.getText();
 
     }
 
@@ -27,4 +30,7 @@ public class MyAccountPage extends Page {
     public void clickPageTitleWomen() {
         pageTitleWomenButton.click();
     } // клик на страницу women
+    public void clickNameAddMyFirstAddressButton(){
+        nameAddMyFirstAddressButton.click();
+    }
 }

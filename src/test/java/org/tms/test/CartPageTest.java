@@ -33,7 +33,7 @@ public class CartPageTest extends BaseTest {
     public void removeItemCartToTest() {
         womenPageService.addItemToCart();
         cartPageservice.deleteItemFromCart();
-        String actualTextOfButton =
+        String actualTextOfButton ;
 
     }
 

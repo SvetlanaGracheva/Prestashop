@@ -3,7 +3,7 @@
 <suite name="Smoke" verbose="1">
     <test name="LoginPageTest">
         <classes>
-            <class name="org.tms.test.LoginPageFalseTest" />
+            <class name="org.tms.test.CreateAccountTest" />
         </classes>
     </test>
 </suite>
