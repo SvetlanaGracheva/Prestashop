@@ -20,4 +20,34 @@ public class WomenPageService {
     public String getTitleItemInTheCart(){
         return cartPage.descriptionItemInTheCart();
     }
+
+    public void changeTheCurrencyOnTheWebsite(){
+        loginPageService.login();
+        myAccountPage.clickPageTitleWomen();
+        womenPage.clickCurrencyListButton();
+        womenPage.clickCurrencySelectionButton();
+
+    }
+
+    public String getTextСurrencyPresenceOnThePage(){
+        return womenPage.getTextСurrencyPresenceOnThePage(); //валюта на странице
+
+    }
+    public String getTextCurrencyOnTheSite(){
+        return womenPage.getTextCurrencyOnTheSite();
+    }
+
+    public void changeTheLanguageOnTheWebsite() {
+        loginPageService.login();
+        myAccountPage.clickPageTitleWomen();
+        womenPage.clickLanguageListButton();
+        womenPage.clickLanguageListButton();
+    }
+    public String getTextLanguagePresenceOnThePage(){
+        return womenPage.getTextLanguagePresenceOnThePage();
+    }
+
+    public String getTextLanguageOnTheSite(){
+        return womenPage.getTextLanguageOnTheSite();
+    }
 }
