@@ -3,7 +3,7 @@ package org.tms.util;
 public class Constants {
     //public static final String LOGIN_PAGE_URL = "http://prestashop.qatestlab.com.ua/en/";
     public static final String LOGIN_PAGE_URL = "http://prestashop.qatestlab.com.ua/ru/authentication?back=my-account";
-    public static final String EMAIL = "test0906@mail.ru";
+    public static final String EMAIL = "test1006@mail.ru";
     public static final String PASSWORD = "gracheva";
     public static final String PASSWORDFALSE = "123456";
     public static final String EMAILCREATE = "qazwsx0706@mail.ru";
