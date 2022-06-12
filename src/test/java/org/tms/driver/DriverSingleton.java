@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 public class DriverSingleton {
     private static  ThreadLocal<DriverSingleton> instance = new ThreadLocal<>();
 
-    private WebDriver driver;
+    private static WebDriver driver;
 
     private DriverSingleton() {
         driver = WebDriverFactory.getWebDriver();
@@ -18,7 +18,7 @@ public class DriverSingleton {
         return instance.get();
     }
 
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         return driver;
     }
 

@@ -3,22 +3,28 @@ package org.tms.test;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.tms.page.LoginPage;
 import org.tms.page.MyAccountPage;
 import org.tms.service.LoginPageService;
 
-public class LoginPageTest extends BaseTest{
+import static org.tms.util.Constants.EXPECTED_TEXT_OF_NAME_OF_MY_ACCOUNT_PAGE;
 
-    private LoginPageService loginPageService;
+public class LoginPageTest extends BaseTest {
+
+    LoginPageService loginPageService;
+
     @BeforeClass
     public void setUp() {
         loginPageService = new LoginPageService();
+        LoginPage loginPage = new LoginPage();
     }
 
     @Test
-    public void loginTest(){
-        MyAccountPage myAccountPage= loginPageService.login();
-        String actualTextOfMainPage=myAccountPage.getTextPageName();
-        String expectedPageText = "My account";
-        Assert.assertEquals(actualTextOfMainPage,expectedPageText,"The actual text of the page does not match expected!");
+    public void loginTest() {
+        MyAccountPage myAccountPage = loginPageService.login();
+        String actualTextOfMainPage = myAccountPage.getTextPageName();
+        Assert.assertEquals(actualTextOfMainPage,EXPECTED_TEXT_OF_NAME_OF_MY_ACCOUNT_PAGE, "The actual text of the page does not match expected!");
     }
+
+
 }

@@ -2,21 +2,20 @@ package org.tms.service;
 
 import org.tms.model.User;
 import org.tms.page.LoginPage;
-import org.tms.page.MyAccountPage;
 
 import static org.tms.util.Constants.*;
 
-public class LoginPageService {
-
-
-    protected LoginPage loginPage = new LoginPage();
+public class LoginInvalidPageService {
     protected User user = new User();
+    protected LoginPage loginPage = new LoginPage();
 
-    public MyAccountPage login() {
+    public LoginPage login() {
         loginPage.openPage(LOGIN_PAGE_URL)
                 .fillinemailaddress(EMAIL)
-                .fillinpassword(PASSWORD)
+                .fillinpassword(PASSWORD_FALSE)
                 .clicksigninButton();
-        return new MyAccountPage();
+        return new LoginPage();
+
+
     }
 }

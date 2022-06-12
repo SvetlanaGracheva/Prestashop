@@ -1,10 +1,10 @@
 package org.tms.model;
 
 public class User {
-    private String emailaddress = "svetlana_17.07@mail.ru";
-    private String password = "gracheva";
-    private String passwordfalse= "123456";
-    private String emailcreate = "svetlana_17.07@mail.ru";
+    private String emailaddress;
+    private String password ;
+    private String passwordfalse;
+    private String emailcreate;
 
 
     public User() {
