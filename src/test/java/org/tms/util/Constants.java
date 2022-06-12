@@ -3,10 +3,11 @@ package org.tms.util;
 public class Constants {
     //public static final String LOGIN_PAGE_URL = "http://prestashop.qatestlab.com.ua/en/";
     public static final String LOGIN_PAGE_URL = "http://prestashop.qatestlab.com.ua/ru/authentication?back=my-account";
-    public static final String EMAIL = "test1106@mail.ru";
+    public static final String EMAIL = "test1206@mail.ru";
     public static final String PASSWORD = "gracheva";
     public static final String PASSWORD_FALSE = "123456";
-    public static final String EMAIL_CREATE = "test1206@mail.ru";
+    public static final String EMAIL_CREATE = "test1406@mail.ru";
+    public static final String EMAIL_CREATE_FAILED = "11545645";
     public static final String EXPECTED_TEXT_OF_NAME_OF_MY_ACCOUNT_PAGE = "MY ACCOUNT";
     public static final String EXPECTED_TEXT_AUTHENTICATION_FAILED= "There is 1 error";
     public static final String FIRST_NAME= "SVETLANA";

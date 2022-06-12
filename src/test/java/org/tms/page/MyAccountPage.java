@@ -1,8 +1,10 @@
 package org.tms.page;
 
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+@Log4j2
 public class MyAccountPage extends Page {
     @FindBy(xpath = "//h1[contains(text(), 'My account')]")
     private WebElement pageName;
@@ -19,18 +21,22 @@ public class MyAccountPage extends Page {
 
     public String getTextPageName() //получить название страницы
     {
+        log.info("Getting the page name");
         return pageName.getText();
-
     }
 
     public String getTextMessageAccountCreate() {
+        log.info("Getting message Account Create");
         return messageAccountCreate.getText();
     }// получить сообщение аккаунт создан
 
     public void clickPageTitleWomen() {
+        log.info("Clicking button title Women");
         pageTitleWomenButton.click();
     } // клик на страницу women
-    public void clickNameAddMyFirstAddressButton(){
+
+    public void clickNameAddMyFirstAddressButton() {
+        log.info("Clicking the Add My First Address button");
         nameAddMyFirstAddressButton.click();
     }
 }

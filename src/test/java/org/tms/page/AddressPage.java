@@ -1,9 +1,12 @@
 package org.tms.page;
 
+
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
+@Log4j2
 public class AddressPage extends Page {
     @FindBy(xpath = "//input[@id='firstname']")
     private WebElement firstName;
@@ -55,24 +58,27 @@ public class AddressPage extends Page {
 
 
     public AddressPage openPage(String url) {
-        //log.info("Open address page by URL");
+        log.info ("Open address page by URL");
         driver.get(url);
         return this;
     }
 
     public AddressPage fillInFirstName(String firstNameString) {
+        log.info("Entering a name");
         firstName.clear();
         firstName.sendKeys(firstNameString);
         return this;
     }
 
     public AddressPage fillInLastName(String lastNameString) {
+        log.info("Entering Last Name");
         lastName.clear();
         lastName.sendKeys(lastNameString);
         return this;
     }
 
     public AddressPage fillAddress(String addressString) {
+        log.info("Entering an address");
         address.clear();
         address.sendKeys(addressString);
         return this;
@@ -80,65 +86,76 @@ public class AddressPage extends Page {
 
 
     public AddressPage fillInZipCode(String zipCodeString) {
+        log.info("Entering a zip code");
         zipcode.clear();
         zipcode.sendKeys(zipCodeString);
         return this;
     }
 
     public AddressPage fillInCity(String cityString) {
+        log.info("Entering a city");
         city.clear();
         city.sendKeys(cityString);
         return this;
     }
 
     public AddressPage fillInPhoneHome(String phoneHomeString) {
+        log.info("Entering a phone home");
         phoneHome.clear();
         phoneHome.sendKeys(phoneHomeString);
         return this;
     }
 
     public AddressPage fillInPhoneMobile(String phoneMobileString) {
+        log.info("Entering a phone mobile");
         phoneMobile.clear();
         phoneMobile.sendKeys(phoneMobileString);
         return this;
     }
 
     public void clickDropDownListButton() {
+        log.info("Clicking a dropdown");
         stateButton.click();
     }
 
     public void clickNameStateButton(String state) {
+        log.info("Clicking a state");
         stateNameButton.click();
     }
 
     public void clickSaveAddressButton() {
+        log.info("Clicking ont he save Button");
         saveAddressButton.click();
     }
 
     public String getTheTextAddressError() {
-        return errorsAddress.getText(); // сообщение о создании адресе
+        log.info("Getting a text of name of address errors");
+        return errorsAddress.getText();
     }
 
 
     public String getTheTextAboutCreatingNewAddress() {
-        return messageAddress.getText(); // сообщение о создании адресе
+        log.info("Getting a text of name of address");
+        return messageAddress.getText(); //
 
     }
-    public String getTheTextBlockNameMyAddress() {
+    public String getTheTextBlockNameMyAddress() { // не подсвечивает ?
+        log.info("Getting a text of name block of address");
         return blockNameMyAddress.getText(); // текст о наличии блоа  адрес
 
 }
     public void clickDeleteAddressButton() {
+        log.info("Clicking on the delete address button");
         deleteAddressButton.click();
     }
     public String getText() {
-        //log.info("Getting text from the button (for assert)");
+        log.info("Getting text from the button (for assert)");
         return availableAddressesButton.getText();
     }
 
 
     public void clickOnLogoutButton() {
-       // log.info("Clicking on the logout button");
+       log.info("Clicking on the logout button");
         logoutButton.click();
     }
 }

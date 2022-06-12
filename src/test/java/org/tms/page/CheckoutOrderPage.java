@@ -1,9 +1,10 @@
 package org.tms.page;
 
 
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-//@Log4j2
+@Log4j2
 
 public class CheckoutOrderPage extends Page {
     @FindBy(xpath = "//button[@name='processAddress']")
@@ -25,32 +26,32 @@ public class CheckoutOrderPage extends Page {
     private WebElement orderConfirmationMessage;
 
     public void clickOnProceedToCheckoutButton() {
-      //  log.info("Clicking on the proceed to checkout button");
+      log.info("Clicking on the proceed to checkout button");
         proceedToCheckoutButton.click();
     }
 
     public void ChoosingTheTypeOfDelivery() {
-       // log.info("Choosing the type of delivery");
+       log.info("Choosing the type of delivery");
         consentCheckbox.click();
     }
 
     public void clickOnProceedToCheckoutButtonAfterAgreementOfTermsOfServices() {
-      //  log.info("Clicking on the proceed to checkout button after agreement of terms of delivery");
+      log.info("Clicking on the proceed to checkout button after agreement of terms of delivery");
        proceedToCheckoutButton.click();
     }
 
     public void clickOnBankTransferButton() {
-      //  log.info("Choosing a bank transfer payment");
+      log.info("Choosing a bank transfer payment");
         choosingPaymentMethodButton.click();
     }
 
     public void clickOnOrderConfirmationButton() {
-        //log.info("Clicking on the order confirmation button");
+        log.info("Clicking on the order confirmation button");
         orderConfirmationButton.click();
     }
 
     public String getTextOfOrderConfirmationMessage() {
-      //  log.info("Getting a text of order confirmation message");
+      log.info("Getting a text of order confirmation message");
         return orderConfirmationMessage.getText();
     }
 

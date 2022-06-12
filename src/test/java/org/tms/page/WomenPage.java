@@ -1,5 +1,6 @@
 package org.tms.page;
 
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -7,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.tms.driver.DriverSingleton;
 
+@Log4j2
 public class WomenPage extends Page {
     WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 20);
 
@@ -52,58 +54,64 @@ public class WomenPage extends Page {
 
 
     public void clickCurrencyListButton() {
+        log.info("Clicking the currency list");
         currencyListButton.click();// клик список валюты
     }
 
     public void clickCurrencySelectionButton() {
+        log.info("Clicking on the currency select");
         currencySelectionButton.click(); //валюта
     }
 
     public String getTextСurrencyPresenceOnThePage() {
-        return currencyPresenceOnThePage.getText(); //валюта на страницк
+        log.info("Getting currency presence on the page");
+        return currencyPresenceOnThePage.getText(); //
     }
 
     public String getTextCurrencyOnTheSite() {
+        log.info("Getting currency received on the top line");
         return currencyOnTheSite.getText(); //валюта на сайте сврху строка
     }
 
     public void clickLanguageListButton() {
+        log.info("Clicking the language list");
         languageListButton.click();
     }
 
     public void clickLanguageSelection() {
+        log.info("Clicking on the language select");
         languageSelectionButton.click();
     }
 
     public String getTextLanguageOnTheSite() {
+        log.info("Getting language received on the top line");
         return languageOnTheSite.getText();
     }
 
     public String getTextLanguagePresenceOnThePage() {
+        log.info("Getting language presence on the page");
         return languagePresenceOnThePage.getText();
     }
 
-    public WomenPage clickToAddToCartButton() {
-        //log.info("Clicking on the add to the cart button");
-        Actions actions = new Actions(driver);
-        actions.moveToElement(element).moveToElement(addToCartButton).click().build().perform();
-        return this;
+    public void clickToAddToCartButton() {
+        log.info("Clicking on the add to the cart button");
+        addToCartButton.click();
     }
 
-    public WomenPage clickToContinueShoppingButton() {
-        //log.info("Clicking on the continue to shopping button");
+
+    public void clickToContinueShoppingButton() {
+        log.info("Clicking on the continue to shopping button");
         wait.until(ExpectedConditions.visibilityOf(continueShoppingButton)).click();
         continueShoppingButton.click();
-        return this;
     }
 
     public void clickToCartButton() {
-       // log.info("Clicking on the cart button");
+        log.info("Clicking on the cart button");
         cartButton.click();
     }
 
     public String getPriceOfItem() {
-       // log.info("Getting price of item");
+        log.info("Getting price of item");
         return priceOfItem.getText();
     }
 }

@@ -11,9 +11,9 @@ public class LoginInvalidPageService {
 
     public LoginPage login() {
         loginPage.openPage(LOGIN_PAGE_URL)
-                .fillinemailaddress(EMAIL)
-                .fillinpassword(PASSWORD_FALSE)
-                .clicksigninButton();
+                .fillInEmailAddress(EMAIL)
+                .fillInPassword(PASSWORD_FALSE)
+                .clickSignInButton();
         return new LoginPage();
 
 

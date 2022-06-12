@@ -13,8 +13,8 @@ public class WomenPageService {
     public String addItemToCart(){
         loginPageService.login();
         myAccountPage.clickPageTitleWomen();
-        womenPage.clickToAddToCartButton()
-                .clickToContinueShoppingButton();
+        womenPage.clickToAddToCartButton();
+         womenPage.clickToContinueShoppingButton();
                 return womenPage.getPriceOfItem();
 
 
