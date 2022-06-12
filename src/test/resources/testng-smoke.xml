@@ -1,9 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Smoke" verbose="1">
-    <test name="LoginPageTest">
+<suite thread-count="2" name="Test suite" verbose="1" parallel="classes">
+    <test name="WomenPageTest">
         <classes>
-            <class name="org.tms.test.СhangeCurrencyTest" />
+            <class name="org.tms.test.WomenPageTest" />
         </classes>
     </test>
+
 </suite>

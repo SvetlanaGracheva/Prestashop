@@ -8,4 +8,7 @@ public class CartPageService {
 public void deleteItemFromCart(){
     cartPage.clickRemoveButton();
 }
+public void clickOnProceedToCheckoutButton(){
+
+}
 }

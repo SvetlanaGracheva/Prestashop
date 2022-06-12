@@ -17,9 +17,8 @@ public class LoginPageInvalidTest extends BaseTest{
         loginInvalidPageService= new LoginInvalidPageService();
         LoginPage loginPage = new LoginPage();
     }
-
-    @Test
-    public void loginFalseTest(){
+@Test
+    public void loginPageInvalidTest(){
         LoginPage loginPage=  loginInvalidPageService.login();
         String actualTextOfMainPage=loginPage.getTextAuthenticationFailed();
         String expectedTextAuthenticationFailed= loginPage.getTextOfNameOfMainPageSection();

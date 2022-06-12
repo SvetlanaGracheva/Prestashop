@@ -17,23 +17,13 @@ public class CartPageTest extends BaseTest {
     public void setUp() {
         womenPageService = new WomenPageService();
         cartPageservice = new CartPageService();
+            }
 
-    }
-
-    @Test(priority = 1)
-    public void addItemCartToTest() {
-        womenPageService.addItemToCart();
-        String actualTitleOfItemTheCart = womenPageService.getTitleItemInTheCart();
-        String expectedTitleOfItemTheCart = String.valueOf(00);
-        Assert.assertTrue(actualTitleOfItemTheCart.contains(expectedTitleOfItemTheCart), "product not found");
-
-    }
-
-    @Test(priority = 2) //удалить товар
+    @Test //удалить товар
     public void removeItemCartToTest() {
         womenPageService.addItemToCart();
         cartPageservice.deleteItemFromCart();
-        String actualTextOfButton ;
+
 
     }
 

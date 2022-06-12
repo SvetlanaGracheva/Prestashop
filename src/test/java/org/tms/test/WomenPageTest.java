@@ -3,12 +3,9 @@ package org.tms.test;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.tms.page.LoginPage;
-import org.tms.page.MyAccountPage;
-import org.tms.service.LoginPageService;
 import org.tms.service.WomenPageService;
 
-public class СhangeCurrencyTest extends BaseTest {
+public class WomenPageTest extends BaseTest {
 
     // падает а локаторе //a[contains(text(), 'Евро')]
 
@@ -20,20 +17,27 @@ public class СhangeCurrencyTest extends BaseTest {
 
     }
 
-    @Test //падает на локаторе выбрать  язык //div[@class='current']//span[contains(text(), 'Українська')]}]
+    @Test
+    // падает а локаторе //a[contains(text(), 'Евро')]
    public void  changeTheCurrencyOnTheWebsiteTest(){
       womenPageService.changeTheCurrencyOnTheWebsite();
-       String actualCurrencyName = womenPageService.getTextСurrencyPresenceOnThePage();
-       String expectedCurrencyName= womenPageService.getTextCurrencyOnTheSite();
+       String actualCurrencyName = womenPageService.getTextCurrencyOnTheSite();
+       String expectedCurrencyName= "EUR";
        Assert.assertEquals(actualCurrencyName,expectedCurrencyName,"The currency on the page is incorrect");
 
     }
 
-    @Test
+    @Test  //падает на локаторе выбрать  язык //div[@class='current']//span[contains(text(), 'Українська')]}]
     public void changeTheLanguageOnTheWebsiteTest(){
         womenPageService.changeTheLanguageOnTheWebsite();
         String actualLanguageName= womenPageService.getTextLanguageOnTheSite();
         String expectedLanguageName= "Українська";
         Assert.assertEquals(actualLanguageName,expectedLanguageName,"The language on the page is incorrect");
     }
+    @Test //написать добавить товар
+    public void addItemToCartTest() {
+        womenPageService.addItemToCart();
+    }
+
+
 }

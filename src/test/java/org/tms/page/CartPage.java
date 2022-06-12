@@ -8,10 +8,13 @@ public class CartPage extends Page{
     private WebElement ItemInTheCart; //  товар в корзине
 
     @FindBy(xpath = "//a[@id='3_13_0_0']")
-    private WebElement removeButton; //кнопка удалить
+    private WebElement removeItemButton; //кнопка удалить
 
-    @FindBy(xpath = "//a[@class='login']")
-    private WebElement signInButton; //кнопка войти
+
+
+
+
+
 
 
 
@@ -20,7 +23,7 @@ public class CartPage extends Page{
     }
 
     public void clickRemoveButton(){
-        removeButton.click(); //нажать удалить
+        removeItemButton.click(); //нажать удалить
     }
 
 }

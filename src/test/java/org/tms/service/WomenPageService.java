@@ -10,22 +10,25 @@ public class WomenPageService {
     MyAccountPage myAccountPage= new MyAccountPage();
     CartPage cartPage= new CartPage();
 
-    public void addItemToCart(){
+    public String addItemToCart(){
         loginPageService.login();
         myAccountPage.clickPageTitleWomen();
-        womenPage.clickToCardButton();
-        womenPage.clickPlaceAnOrderButton();
+        womenPage.clickToAddToCartButton()
+                .clickToContinueShoppingButton();
+                return womenPage.getPriceOfItem();
+
 
     }
     public String getTitleItemInTheCart(){
         return cartPage.descriptionItemInTheCart();
     }
 
-    public void changeTheCurrencyOnTheWebsite(){
+    public String changeTheCurrencyOnTheWebsite(){
         loginPageService.login();
         myAccountPage.clickPageTitleWomen();
         womenPage.clickCurrencyListButton();
         womenPage.clickCurrencySelectionButton();
+        return womenPage.getTextСurrencyPresenceOnThePage();
 
     }
 

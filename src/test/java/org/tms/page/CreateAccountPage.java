@@ -2,8 +2,12 @@ package org.tms.page;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.tms.driver.DriverSingleton;
 
 public class CreateAccountPage extends Page {
+    WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 15);
+
     @FindBy(xpath = "//input[@id='id_gender2']") //гр-н или г-жа
     private WebElement title;
 
@@ -16,29 +20,6 @@ public class CreateAccountPage extends Page {
     @FindBy(xpath = "//input[@id='passwd']")
     private WebElement passwordcreate;
 
-    @FindBy(xpath = "//select[@id='days']")
-    private WebElement dateOfBirthdays;
-
-    @FindBy(xpath = "//select[@id='days']//option[@value='17']") //выбор даты рождения
-    private WebElement dateOfBirthDaysChoice;
-
-    @FindBy(xpath = "//select[@id='months']")
-    private WebElement dateofbirthmonths;
-
-    @FindBy(xpath = "//select[@id='months']//option[@value='7']")
-    private WebElement dateofbirthmonthschoice;
-
-    @FindBy(xpath = "//div[@id='cuselFrame-years']")
-    private WebElement dateofbirthyears;
-
-    @FindBy(xpath = "//div[@id='cusel-scroll-years']//span[@val='1988']")
-    private WebElement dateofbirthyearschoice;
-
-    @FindBy(xpath = "///input[@id='newsletter']")
-    private WebElement checkboxnewsletter;
-
-    @FindBy(xpath = "//input[@id='optin']")
-    private WebElement checkboxoffers;
 
     @FindBy(xpath = "//span[contains(text(), 'Register')]")
     private WebElement registerButton;
@@ -65,32 +46,7 @@ public class CreateAccountPage extends Page {
         return this;
     }
 
-    public void clickdateofbirthdaysButton() {
-        dateOfBirthdays.click();
-    }
-
-    public void clickdateofbirthdayschoice() {
-        dateOfBirthDaysChoice.click();
-    }
-    public void clickDateOfBirthMonthsButton() {
-        dateofbirthmonths.click();
-    }
-    public void clickdateofbirthmonthschoice() {
-        dateofbirthmonthschoice.click();
-    }
-    public void clickdateofbirthyears() {
-        dateofbirthyears.click();
-    }
-    public void clickdateofbirthyearschoice(){
-        dateofbirthyearschoice.click();
-    }
-    public void clickcheckboxnewsletter(){
-        checkboxnewsletter.click();
-    }
-    public void clickcheckboxoffers(){
-        checkboxoffers.click();
-    }
-    public void clickregisterButton(){
+       public void clickRegisterButton(){
         registerButton.click();
     }
 

@@ -12,7 +12,7 @@ public class AddressPage extends Page {
     private WebElement lastName;
 
     @FindBy(xpath = "//input[@id='address1']")
-    private WebElement address1;
+    private WebElement address;
 
     @FindBy(xpath = "//input[@id='postcode']")
     private WebElement zipcode;
@@ -26,14 +26,17 @@ public class AddressPage extends Page {
     @FindBy(xpath = "//input[@id='phone_mobile']")
     private WebElement phoneMobile;
 
-    @FindBy(xpath = "//select[@id='id_state']")
+    @FindBy(xpath = "//div[@id='uniform-id_state']")
     private WebElement stateButton;
 
     @FindBy(xpath = "//select[@id='id_state']//option[@value='337']")
-    private WebElement stateNameButton;
+    private WebElement stateNameButton; //здесь падает , нужен ввод буквы А
 
     @FindBy(xpath = "//button[@id='submitAddress']")
     private WebElement saveAddressButton;
+
+    @FindBy(xpath = "//p[contains(text(), 'There are 3 errors ')]")
+    private WebElement  errorsAddress;
 
     @FindBy(xpath = "//strong[contains(text(), 'Your addresses are listed below.')]")
     private WebElement messageAddress;
@@ -41,52 +44,62 @@ public class AddressPage extends Page {
     @FindBy(xpath = "//h3[contains(text(), 'My address')]")
     private WebElement blockNameMyAddress;
 
+    @FindBy(xpath = "//a[@title='Delete']")
+    private WebElement deleteAddressButton;
+
+    @FindBy(xpath = "//p[@class='alert alert-warning']")
+    private WebElement availableAddressesButton;
+
+    @FindBy(xpath = "//a[@class='logout']")
+    private WebElement logoutButton;
+
 
     public AddressPage openPage(String url) {
+        //log.info("Open address page by URL");
         driver.get(url);
         return this;
     }
 
-    public AddressPage fillInFirstName(String firstnamestring) {
+    public AddressPage fillInFirstName(String firstNameString) {
         firstName.clear();
-        firstName.sendKeys(firstnamestring);
+        firstName.sendKeys(firstNameString);
         return this;
     }
 
-    public AddressPage fillInLastName(String lastNamestring) {
-        firstName.clear();
-        firstName.sendKeys(lastNamestring);
+    public AddressPage fillInLastName(String lastNameString) {
+        lastName.clear();
+        lastName.sendKeys(lastNameString);
         return this;
     }
 
-    public AddressPage fillAddress(String addressstring) {
-        address1.clear();
-        address1.sendKeys(addressstring);
+    public AddressPage fillAddress(String addressString) {
+        address.clear();
+        address.sendKeys(addressString);
         return this;
     }
 
 
-    public AddressPage fillInZipCode(String zipcodestring) {
-        firstName.clear();
-        firstName.sendKeys(zipcodestring);
+    public AddressPage fillInZipCode(String zipCodeString) {
+        zipcode.clear();
+        zipcode.sendKeys(zipCodeString);
         return this;
     }
 
-    public AddressPage fillInCity(String citystring) {
-        firstName.clear();
-        firstName.sendKeys(citystring);
+    public AddressPage fillInCity(String cityString) {
+        city.clear();
+        city.sendKeys(cityString);
         return this;
     }
 
-    public AddressPage fillInPhoneHome(String phoneHomestring) {
-        firstName.clear();
-        firstName.sendKeys(phoneHomestring);
+    public AddressPage fillInPhoneHome(String phoneHomeString) {
+        phoneHome.clear();
+        phoneHome.sendKeys(phoneHomeString);
         return this;
     }
 
-    public AddressPage fillInPhoneMobile(String phoneMobilestring) {
-        firstName.clear();
-        firstName.sendKeys(phoneMobilestring);
+    public AddressPage fillInPhoneMobile(String phoneMobileString) {
+        phoneMobile.clear();
+        phoneMobile.sendKeys(phoneMobileString);
         return this;
     }
 
@@ -94,13 +107,18 @@ public class AddressPage extends Page {
         stateButton.click();
     }
 
-    public void clickNameStateButton () {
+    public void clickNameStateButton(String state) {
         stateNameButton.click();
     }
 
     public void clickSaveAddressButton() {
         saveAddressButton.click();
     }
+
+    public String getTheTextAddressError() {
+        return errorsAddress.getText(); // сообщение о создании адресе
+    }
+
 
     public String getTheTextAboutCreatingNewAddress() {
         return messageAddress.getText(); // сообщение о создании адресе
@@ -109,7 +127,21 @@ public class AddressPage extends Page {
     public String getTheTextBlockNameMyAddress() {
         return blockNameMyAddress.getText(); // текст о наличии блоа  адрес
 
-}}
+}
+    public void clickDeleteAddressButton() {
+        deleteAddressButton.click();
+    }
+    public String getText() {
+        //log.info("Getting text from the button (for assert)");
+        return availableAddressesButton.getText();
+    }
+
+
+    public void clickOnLogoutButton() {
+       // log.info("Clicking on the logout button");
+        logoutButton.click();
+    }
+}
 
 
 

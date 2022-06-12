@@ -2,8 +2,13 @@ package org.tms.page;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.tms.driver.DriverSingleton;
 
 public class LoginPage extends Page {
+
+    WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 20);
+
     @FindBy(xpath = "//input[@id='email']") //авторизация почта
     private WebElement emailaddress;
 
@@ -14,10 +19,10 @@ public class LoginPage extends Page {
     private WebElement signinButton;
 
     @FindBy(xpath = "//input[@id='email_create']") //ввод адреса для регистрации
-    private WebElement emailcreate;
+    private WebElement emailCreate;
 
     @FindBy(xpath = "//i[@class='icon-user left']")
-    private WebElement createanaccountButton;
+    private WebElement createAccountButton;
 
     @FindBy(xpath = "//li[contains(text(), 'Authentication failed.')]")
     private WebElement authenticationfailed;
@@ -45,13 +50,13 @@ public class LoginPage extends Page {
     }
 
     public LoginPage fillemailcreate(String createemail) {
-        emailcreate.clear();
-        emailcreate.sendKeys(createemail);
+        emailCreate.clear();
+        emailCreate.sendKeys(createemail);
         return this;
     }
 
-    public void clickcreateanaccountButton() {
-        createanaccountButton.click();
+    public void clickCreateanaccountButton() {
+        createAccountButton.click();
     }
 
     public String getTextAuthenticationFailed() {
