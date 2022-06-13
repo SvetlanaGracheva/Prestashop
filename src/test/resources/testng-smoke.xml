@@ -11,14 +11,14 @@
             <class name="org.tms.test.CreateNewIncorrectAccount"/>
         </classes>
     </test>
+       <test name="LoginPageTest">
+        <classes>
+            <class name="org.tms.test.LoginPageTest" />
+        </classes>
+    </test>
     <test name="LoginPageInvalidTest">
         <classes>
             <class name="org.tms.test.LoginPageInvalidTest" />
-        </classes>
-    </test>
-    <test name="LoginPageTest">
-        <classes>
-            <class name="org.tms.test.LoginPageTest" />
         </classes>
     </test>
     <test name="AddressPageTest">
@@ -26,19 +26,14 @@
             <class name="org.tms.test.AddressPageTest"/>
         </classes>
     </test>
-    <test name="CheckoutOrderPageTest">
-        <classes>
-            <class name="org.tms.test.CheckoutOrderPageTest"/>
-        </classes>
-    </test>
     <test name="WomenPageTest">
         <classes>
             <class name="org.tms.test.WomenPageTest"/>
         </classes>
     </test>
-    <test name="CartPageTest">
+    <test name="CheckoutOrderPageTest">
         <classes>
-            <class name="org.tms.test.CartPageTest"/>
+            <class name="org.tms.test.CheckoutOrderPageTest"/>
         </classes>
     </test>
 

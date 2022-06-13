@@ -12,16 +12,16 @@ public class LoginPage extends Page {
 
     WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 20);
 
-    @FindBy(xpath = "//input[@id='email']") //авторизация почта
+    @FindBy(xpath = "//input[@id='email']")
     private WebElement emailAddress;
 
-    @FindBy(xpath = "//input[@type='password']") //авторизация пароль
+    @FindBy(xpath = "//input[@type='password']")
     private WebElement password;
 
-    @FindBy(xpath = "//i[@class='icon-lock left']") //найти другой локатор  /
+    @FindBy(xpath = "//i[@class='icon-lock left']")
     private WebElement signInButton;
 
-    @FindBy(xpath = "//input[@id='email_create']") //ввод адреса для регистрации
+    @FindBy(xpath = "//input[@id='email_create']")
     private WebElement emailCreate;
 
     @FindBy(xpath = "//i[@class='icon-user left']")
@@ -30,10 +30,10 @@ public class LoginPage extends Page {
     @FindBy(xpath = "//li[contains(text(), 'Authentication failed.')]")
     private WebElement authenticationFailed;
 
-    @FindBy(xpath = "//h1[contains(text(), 'Authentication')]") // вход с неверным паролем
+    @FindBy(xpath = "//h1[contains(text(), 'Authentication')]")
     private WebElement mainObjectOfMyAccountPage;
 
-    @FindBy(xpath = "//li[contains(text(), 'Invalid email address.')]") // вход с неверным паролем
+    @FindBy(xpath = "//li[contains(text(), 'Invalid email address.')]")
     private WebElement invalidEmailMessage;
 
     @FindBy(xpath = "//p[@class='alert alert-success']")

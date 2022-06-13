@@ -9,7 +9,6 @@ import org.tms.service.WomenPageService;
 
 public class WomenPageTest extends BaseTest {
 
-    // падает а локаторе //a[contains(text(), 'Евро')]
 
    WomenPageService womenPageService;
    CartPageService cartPageService;
@@ -45,7 +44,7 @@ public class WomenPageTest extends BaseTest {
     public void addItemToCartTest() {
         womenPageService.addItemToCart();
         String actualNameOfItemTheCart= womenPageService.getTitleItemInTheCart();
-        cartPage.clickOnLogoutButton();
+        cartPage.clickOnLogoutButton();//запуталась как написать ассерт
         String expectedNameOfItemTheCartText ="Printed Dress";
         Assert.assertEquals(actualNameOfItemTheCart,expectedNameOfItemTheCartText,"actual name");
     }

@@ -9,8 +9,6 @@ public class CartPage extends Page {
     @FindBy(xpath = "//td[@class='cart_description']//*[contains(text(), 'Printed Dress')]")
     private WebElement ItemInTheCart; //  товар в корзине
 
-    @FindBy(xpath = "//a[@id='3_13_0_0']")
-    private WebElement removeItemButton; //кнопка удалить
     @FindBy(xpath = "//span[@id='summary_products_quantity']")
     private WebElement countOfItemInTheCart;
 
@@ -36,12 +34,6 @@ public class CartPage extends Page {
         log.info("GetTing the Product description In the Shopping Cart");
         return ItemInTheCart.getText(); // получить название товара в корзине
     }
-
-    public void clickRemoveButton() {
-        log.info("Clicking on delete item button");
-        removeItemButton.click(); //нажать удалить
-    }
-
 
     public String getCountOfItemsInTheCart() {
         log.info("Getting count of items in the cart");
