@@ -15,7 +15,7 @@ public class LoginPageService {
     public MyAccountPage login() {
         loginPage.openPage(LOGIN_PAGE_URL)
                 .fillInEmailAddress(EMAIL)
-                .fillInPassword(PASSWORD)
+                .fillInPassword(PASSWORD_CREATE)
                 .clickSignInButton();
         return new MyAccountPage();
     }

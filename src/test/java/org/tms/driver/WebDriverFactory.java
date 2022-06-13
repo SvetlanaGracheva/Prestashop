@@ -12,7 +12,7 @@ public class WebDriverFactory {
 
     public static WebDriver getWebDriver() {
         WebDriver driver = null;
-        switch (System.getProperty("browser")) {
+        switch (System.getProperty("browser", "chrome")) {
             case "firefox": {
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();

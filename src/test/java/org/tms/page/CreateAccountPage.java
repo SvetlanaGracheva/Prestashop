@@ -3,6 +3,7 @@ package org.tms.page;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.tms.driver.DriverSingleton;
 
@@ -26,6 +27,7 @@ public class CreateAccountPage extends Page {
     private WebElement registerButton;
 
     public void clickTitle() {
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(title));
         title.click();
     }
 

@@ -15,7 +15,7 @@ public class LoginPage extends Page {
     @FindBy(xpath = "//input[@id='email']") //авторизация почта
     private WebElement emailAddress;
 
-    @FindBy(xpath = "//input[@id='passwd']") //авторизация пароль
+    @FindBy(xpath = "//input[@type='password']") //авторизация пароль
     private WebElement password;
 
     @FindBy(xpath = "//i[@class='icon-lock left']") //найти другой локатор  /
@@ -35,6 +35,13 @@ public class LoginPage extends Page {
 
     @FindBy(xpath = "//li[contains(text(), 'Invalid email address.')]") // вход с неверным паролем
     private WebElement invalidEmailMessage;
+
+    @FindBy(xpath = "//p[@class='alert alert-success']")
+    private WebElement messageAboutCreatingAccount;
+
+    public String getTextMessageAboutCreating() {
+        return messageAboutCreatingAccount.getText();
+    }
 
     public LoginPage openPage(String url) {
         log.info("Opening page by URL");
@@ -70,8 +77,10 @@ public class LoginPage extends Page {
     }
 
     public void clickCreateAnAccountButton() {
+        new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(password));
         log.info("Clicking the button create");
-        wait.until(ExpectedConditions.visibilityOf(createAccountButton)).click();
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(createAccountButton));
+        //wait.until(ExpectedConditions.visibilityOf(createAccountButton)).click();
         createAccountButton.click();
     }
 
@@ -88,6 +97,7 @@ public class LoginPage extends Page {
     }
 
     public String getTextInvalidEmailMessage(){
+        new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(invalidEmailMessage));
         log.info("Getting message invalid email");
         return invalidEmailMessage.getText();
 

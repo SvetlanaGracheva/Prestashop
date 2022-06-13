@@ -29,14 +29,14 @@ public class CreateAccountService {
                     .fillEmailCreate(EMAIL_CREATE)
                     .clickCreateAnAccountButton(); // нужно ожидание
             createAccountPage.clickTitle();
-            createAccountPage.fillInLastName(FIRST_NAME);
+            createAccountPage.fillInFirstName(FIRST_NAME);
             createAccountPage.fillInLastName(LAST_NAME);
             createAccountPage.fillInPassword(PASSWORD_CREATE);
             createAccountPage.clickRegisterButton();
         }
 
         public String getTextPageName () {
-            return loginPage.getTextAuthenticationFailed();
+            return loginPage.getTextMessageAboutCreating();
 
 
         }

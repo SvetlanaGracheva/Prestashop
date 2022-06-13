@@ -14,14 +14,6 @@ public class CreateAccountTest extends BaseTest {
     public void setUp() {
         createAccountService= new CreateAccountService();}
 
-    @Test
-    public void createNewAccountFailedTest(){
-        createAccountService.createNewAccountFailed();
-        String actualTextOfAccountFailed=createAccountService.getTextInvalidEmailMessage();
-        String expectedTextOfAccountFailedText= "Invalid email address.";
-        Assert.assertEquals(actualTextOfAccountFailed,expectedTextOfAccountFailedText,"Email incorrect");
-
-    }
 
     @Test
     public void createAccountTest(){

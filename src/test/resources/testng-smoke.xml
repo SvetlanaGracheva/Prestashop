@@ -3,7 +3,12 @@
 <suite thread-count="2" name="Test suite" verbose="1" parallel="classes">
     <test name="CreateAccountTest">
         <classes>
-            <class name="org.tms.test.CreateAccountTest" />
+            <class name="org.tms.test.CreateAccountTest"/>
+        </classes>
+    </test>
+    <test name="Create incorrect account">
+        <classes>
+            <class name="org.tms.test.CreateNewIncorrectAccount"/>
         </classes>
     </test>
     <test name="LoginPageInvalidTest">
@@ -18,22 +23,22 @@
     </test>
     <test name="AddressPageTest">
         <classes>
-            <class name="org.tms.test.AddressPageTest" />
+            <class name="org.tms.test.AddressPageTest"/>
         </classes>
     </test>
-       <test name="CheckoutOrderPageTest">
+    <test name="CheckoutOrderPageTest">
         <classes>
-            <class name="org.tms.test.CheckoutOrderPageTest" />
+            <class name="org.tms.test.CheckoutOrderPageTest"/>
         </classes>
     </test>
     <test name="WomenPageTest">
         <classes>
-            <class name="org.tms.test.WomenPageTest" />
+            <class name="org.tms.test.WomenPageTest"/>
         </classes>
     </test>
     <test name="CartPageTest">
         <classes>
-            <class name="org.tms.test.CartPageTest" />
+            <class name="org.tms.test.CartPageTest"/>
         </classes>
     </test>
 
