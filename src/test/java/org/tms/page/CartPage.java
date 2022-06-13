@@ -9,6 +9,9 @@ public class CartPage extends Page {
     @FindBy(xpath = "//td[@class='cart_description']//*[contains(text(), 'Printed Dress')]")
     private WebElement ItemInTheCart; //  товар в корзине
 
+    @FindBy(xpath = "//a[@id='3_13_0_0']")
+    private WebElement removeItemButton;
+
     @FindBy(xpath = "//span[@id='summary_products_quantity']")
     private WebElement countOfItemInTheCart;
 
@@ -39,6 +42,9 @@ public class CartPage extends Page {
         log.info("Getting count of items in the cart");
         return countOfItemInTheCart.getText();
     }
+    public void clickRemoveButton(){
+        log.info("Clicking on the button remove");
+        removeItemButton.click();}
 
     public void clickOnLogoutButton() {
         log.info("Clicking on the logout button");
