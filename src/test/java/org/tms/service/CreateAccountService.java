@@ -14,15 +14,6 @@ public class CreateAccountService {
     LoginPage loginPage = new LoginPage();
     WebDriver driver;
 
-    public void createNewAccountFailed() {
-        loginPage.openPage(LOGIN_PAGE_URL)
-                .fillEmailCreate(EMAIL_CREATE_FAILED)
-                .clickCreateAnAccountButton();}
-
-    public String getTextInvalidEmailMessage(){
-        return loginPage.getTextInvalidEmailMessage();
-    }
-
 
         public void createNewAccount () {
             loginPage.openPage(LOGIN_PAGE_URL)

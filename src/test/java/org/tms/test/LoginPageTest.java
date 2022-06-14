@@ -22,9 +22,8 @@ public class LoginPageTest extends BaseTest {
     @Test
     public void loginTest() {
         MyAccountPage myAccountPage = loginPageService.login();
-        String actualTextOfMainPage = myAccountPage.getTextPageName();
+        String actualTextOfMainPage = myAccountPage.getTextPageNameAccount();
         Assert.assertEquals(actualTextOfMainPage,EXPECTED_TEXT_OF_NAME_OF_MY_ACCOUNT_PAGE, "The actual text of the page does not match expected!");
     }
-
 
 }

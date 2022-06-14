@@ -18,8 +18,11 @@ public class CreateAccountTest extends BaseTest {
     @Test
     public void createAccountTest(){
        createAccountService.createNewAccount();
-        String actualTextOfAccount=createAccountService.getTextPageName();
-        Assert.assertEquals(actualTextOfAccount,EXPECTED_TEXT_OF_NAME_OF_MY_ACCOUNT_PAGE, "The actual text of the page does not match expected!");
+        String actualTextOfCreateAccount= createAccountService.getTextPageName();
+        String expectedTextOfCreateAccount ="Your account has been created.";
+        Assert.assertEquals(actualTextOfCreateAccount,expectedTextOfCreateAccount, "The actual text of the page does not match expected!");
 
     }
+
+
 }

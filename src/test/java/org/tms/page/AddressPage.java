@@ -1,6 +1,5 @@
 package org.tms.page;
 
-
 import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -118,10 +117,15 @@ public class AddressPage extends Page {
         stateButton.click();
     }
 
-    public void clickNameStateButton(String state) {
-        log.info("Clicking a state");
-        stateNameButton.click();
-    }
+    public AddressPage fillInState(String stateString) {
+        log.info("Entering a state");
+        stateButton.sendKeys(stateString);
+        return this;}
+
+    // public void clickNameStateButton(String state) {
+       // log.info("Clicking a state");
+       // stateNameButton.click();
+    //}
 
     public void clickSaveAddressButton() {
         log.info("Clicking ont he save Button");
@@ -143,7 +147,7 @@ public class AddressPage extends Page {
         log.info("Getting a text of name block of address");
         return blockNameMyAddress.getText(); // текст о наличии блоа  адрес
 
-}
+    }
     public void clickDeleteAddressButton() {
         log.info("Clicking on the delete address button");
         deleteAddressButton.click();
@@ -155,10 +159,12 @@ public class AddressPage extends Page {
 
 
     public void clickOnLogoutButton() {
-       log.info("Clicking on the logout button");
+        log.info("Clicking on the logout button");
         logoutButton.click();
     }
 }
+
+
 
 
 

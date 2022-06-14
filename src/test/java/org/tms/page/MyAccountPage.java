@@ -6,11 +6,12 @@ import org.openqa.selenium.support.FindBy;
 
 @Log4j2
 public class MyAccountPage extends Page {
-    @FindBy(xpath = "//h1[contains(text(), 'My account')]")
-    private WebElement pageName;
+    @FindBy(xpath = "//p[contains(text(), 'Welcome to your account. Here you can manage all of your personal information and orders.')]")
+    private WebElement pageNameAccount;
 
     @FindBy(xpath = "//p[contains(text(), 'Your account has been created.')]")
-    private WebElement messageAccountCreate;  //сообщение аккаунт создан
+    private WebElement messageAccountCreate;
+
 
     @FindBy(xpath = "//a[@title='Women']")
     private WebElement pageTitleWomenButton;
@@ -19,10 +20,10 @@ public class MyAccountPage extends Page {
     private WebElement nameAddMyFirstAddressButton; //добавить мой адрес
 
 
-    public String getTextPageName() //получить название страницы
+    public String getTextPageNameAccount()
     {
         log.info("Getting the page name");
-        return pageName.getText();
+        return pageNameAccount.getText();
     }
 
     public String getTextMessageAccountCreate() {

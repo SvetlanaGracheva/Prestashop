@@ -1,7 +1,5 @@
 package org.tms.service;
 
-
-
 import org.openqa.selenium.Alert;
 import org.tms.driver.DriverSingleton;
 import org.tms.page.AddressPage;
@@ -25,12 +23,12 @@ public class AddressService {
                 .fillInCity(CITY)
                 .fillInPhoneHome(HOME_PHONE)
                 .fillInPhoneMobile(MOBILE_PHONE)
-        .clickSaveAddressButton();
+                .clickSaveAddressButton();
     }
 
-           public String getTheTextAddressError(){
+    public String getTheTextAddressError(){
         return addressPage.getTheTextAddressError();
-           }
+    }
 
     public void createYourAddress(){
         loginPageService.login();
@@ -43,7 +41,7 @@ public class AddressService {
                 .fillInPhoneHome(HOME_PHONE)
                 .fillInPhoneMobile(MOBILE_PHONE)
                 .clickDropDownListButton();
-        addressPage.clickNameStateButton(STATE);//ЗДЕСЬ ПАДАЕТ , здесь не клик а выбор по  букве
+        addressPage.fillInState(STATE);//ЗДЕСЬ ПАДАЕТ , здесь не клик а выбор по  букве
         addressPage.clickSaveAddressButton();
 
     }

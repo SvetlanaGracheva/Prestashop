@@ -36,8 +36,11 @@ public class LoginPage extends Page {
     @FindBy(xpath = "//li[contains(text(), 'Invalid email address.')]")
     private WebElement invalidEmailMessage;
 
-    @FindBy(xpath = "//p[@class='alert alert-success']")
+    @FindBy(xpath = "//p[contains(text(), 'Your account has been created.')]")
     private WebElement messageAboutCreatingAccount;
+
+    @FindBy(xpath = "//li[contains(text(), 'Invalid password.')]")
+    private WebElement messageInvalidPassword;
 
     public String getTextMessageAboutCreating() {
         return messageAboutCreatingAccount.getText();
@@ -90,21 +93,22 @@ public class LoginPage extends Page {
     }
 
 
-    public String getTextOfNameOfMainPageSection (){
+    public String getTextOfNameOfMainPageSection() {
         log.info("Getting name page");
         return mainObjectOfMyAccountPage.getText();
 
     }
 
-    public String getTextInvalidEmailMessage(){
+    public String getTextInvalidEmailMessage() {
         new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(invalidEmailMessage));
         log.info("Getting message invalid email");
         return invalidEmailMessage.getText();
 
     }
 
+    public String getTextOfNameInvalidPassword() {
+        log.info("Getting message Invalid password");
+        return messageInvalidPassword.getText();
+    }
+
 }
-
-
-
-
