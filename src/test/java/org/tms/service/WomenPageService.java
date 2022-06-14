@@ -1,5 +1,6 @@
 package org.tms.service;
 
+import io.qameta.allure.Step;
 import org.tms.page.CartPage;
 import org.tms.page.MyAccountPage;
 import org.tms.page.WomenPage;
@@ -10,15 +11,15 @@ public class WomenPageService {
     MyAccountPage myAccountPage= new MyAccountPage();
     CartPage cartPage= new CartPage();
 
-    public String addItemToCart(){
+    @Step ("Add item to cart")
+    public void addItemToCart() {
         loginPageService.login();
         myAccountPage.clickPageTitleWomen();
         womenPage.clickToAddToCartButton();
-         womenPage.clickToContinueShoppingButton();
-                return womenPage.getPriceOfItem();
-
-
+        womenPage.clickToContinueShoppingButton();
+        womenPage.clickToCartButton();
     }
+
     public String getTitleItemInTheCart(){
         return cartPage.descriptionItemInTheCart();
     }
@@ -37,11 +38,12 @@ public class WomenPageService {
         return womenPage.getTextCurrencyOnTheSite();
     }
 
-    public void changeTheLanguageOnTheWebsite() {
+    public WomenPageService changeTheLanguageOnTheWebsite() {
         loginPageService.login();
         myAccountPage.clickPageTitleWomen();
         womenPage.clickLanguageListButton();
         womenPage.clickLanguageListButton();
+        return new WomenPageService();
     }
 
     public String getTextLanguageOnTheSite(){

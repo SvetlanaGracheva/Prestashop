@@ -11,9 +11,9 @@ import org.tms.util.Waiter;
 
 @Log4j2
 public class WomenPage extends Page {
-    WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 20);
+    WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 10);
 
-    @FindBy(xpath = "//div[@class='button-container']//a[@data-id-product='3']")
+    @FindBy(xpath = "//div[@class='button-container']//a[@data-id-product='1']")
     private WebElement addToCartButton;
 
     @FindBy(xpath = "//div[@class='right-block']")
@@ -36,7 +36,7 @@ public class WomenPage extends Page {
     private WebElement currencySelectionButton; //выбор валюты
 
      @FindBy(xpath = "//strong[contains(text(), 'EUR')]")
-    private WebElement currencyOnTheSite; //валюта сайта , строка сверху
+    private WebElement currencyOnTheSite;
 
     @FindBy(xpath = "//div[@id='languages-block-top']")
     private WebElement languageListButton;
@@ -84,9 +84,9 @@ public class WomenPage extends Page {
 
     public void clickToAddToCartButton() {
         log.info("Clicking on the add to the cart button");
+        Waiter.waitVisibilityOfElement(driver, addToCartButton);
         addToCartButton.click();
     }
-
 
     public void clickToContinueShoppingButton() {
         log.info("Clicking on the continue to shopping button");
@@ -96,6 +96,7 @@ public class WomenPage extends Page {
 
     public void clickToCartButton() {
         log.info("Clicking on the cart button");
+        Waiter.waitVisibilityOfElement(driver, cartButton);
         cartButton.click();
     }
 

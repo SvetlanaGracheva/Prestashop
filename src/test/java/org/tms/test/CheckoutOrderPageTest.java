@@ -10,18 +10,19 @@ import static org.tms.util.Constants.EXPECTED_MESSAGE_OF_CHECKOUT_PAGE;
 //падает так какне создается адрес
 public class CheckoutOrderPageTest extends BaseTest {
 
-    CheckoutOrderPageService checkoutOrderPageService;
+    private CheckoutOrderPageService checkoutOrderPadeService;
 
     @BeforeClass
-    public void setUp(){
-        checkoutOrderPageService=new CheckoutOrderPageService();
+    public void setUp() {
+        checkoutOrderPadeService = new CheckoutOrderPageService();
     }
-    @Test
-    public void checkoutOrderTest(){
-        checkoutOrderPageService.order();
-        String actualMessageOfCheckoutPage = checkoutOrderPageService.getTextOfOderConfirmationMessage();
-        String expectedMessageOfCheckoutPage = EXPECTED_MESSAGE_OF_CHECKOUT_PAGE;
 
+    @Test
+    public void checkoutOrderTest() {
+        checkoutOrderPadeService.order();
+        String actualMessageOfCheckoutPage = checkoutOrderPadeService.getTextOfOderConfirmationMessage();
+        String expectedMessageOfCheckoutPage = "ORDER CONFIRMATION";
+        checkoutOrderPadeService.deleteAddress();
         Assert.assertTrue(actualMessageOfCheckoutPage.contains(expectedMessageOfCheckoutPage), "The actual text of checkout page does not match expected!");
     }
 }

@@ -30,7 +30,7 @@ public class CheckoutOrderPage extends Page {
         proceedToCheckoutButton.click();
     }
 
-    public void ChoosingTheTypeOfDelivery() {
+    public void choosingTheTypeOfDelivery() {
        log.info("Choosing the type of delivery");
         consentCheckbox.click();
     }

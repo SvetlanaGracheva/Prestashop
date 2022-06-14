@@ -27,11 +27,9 @@ public class LoginPage extends Page {
     @FindBy(xpath = "//i[@class='icon-user left']")
     private WebElement createAccountButton;
 
-    @FindBy(xpath = "//li[contains(text(), 'Authentication failed.')]")
-    private WebElement authenticationFailed;
 
     @FindBy(xpath = "//h1[contains(text(), 'Authentication')]")
-    private WebElement mainObjectOfMyAccountPage;
+    private WebElement nameAuthenticationPage;
 
     @FindBy(xpath = "//li[contains(text(), 'Invalid email address.')]")
     private WebElement invalidEmailMessage;
@@ -83,21 +81,16 @@ public class LoginPage extends Page {
         new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(password));
         log.info("Clicking the button create");
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(createAccountButton));
-        //wait.until(ExpectedConditions.visibilityOf(createAccountButton)).click();
-        createAccountButton.click();
-    }
-
-    public String getTextAuthenticationFailed() {
-        log.info("Getting a text about an invalid entry");
-        return authenticationFailed.getText();
+               createAccountButton.click();
     }
 
 
-    public String getTextOfNameOfMainPageSection() {
-        log.info("Getting name page");
-        return mainObjectOfMyAccountPage.getText();
+    public String getTextAuthenticationPage() {
+        log.info("Getting name AuthenticationPage");
+        return nameAuthenticationPage.getText();
 
     }
+
 
     public String getTextInvalidEmailMessage() {
         new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(invalidEmailMessage));

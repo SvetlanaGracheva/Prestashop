@@ -11,9 +11,9 @@ public class CheckoutOrderPageService {
     public void order(){
         addressPageService.createYourAddress();
         womenPageService.addItemToCart();
-        cartPageService.clickOnProceedToCheckoutButton();
+        cartPageService.clickOnLogoutButton();
         checkoutOrderPage.clickOnProceedToCheckoutButton();
-        checkoutOrderPage.ChoosingTheTypeOfDelivery();
+        checkoutOrderPage.choosingTheTypeOfDelivery();
         checkoutOrderPage.clickOnProceedToCheckoutButtonAfterAgreementOfTermsOfServices();
         checkoutOrderPage.clickOnBankTransferButton();
         checkoutOrderPage.clickOnOrderConfirmationButton();

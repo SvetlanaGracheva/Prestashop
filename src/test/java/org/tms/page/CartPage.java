@@ -75,4 +75,5 @@ public class CartPage extends Page {
         log.info("Clicking on the proceed to checkout button");
         proceedToCheckoutButton.click();
     }
+
 }
