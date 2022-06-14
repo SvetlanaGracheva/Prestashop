@@ -20,12 +20,5 @@ public class LoginPageService {
         return new MyAccountPage();
     }
 
-    public LoginPage loginPageInvalid() {
-        loginPage.openPage(LOGIN_PAGE_URL)
-                .fillInEmailAddress(EMAIL)
-                .fillInPassword(PASSWORD_FALSE)
-                .clickSignInButton();
-        return new LoginPage();}
-
 
 }

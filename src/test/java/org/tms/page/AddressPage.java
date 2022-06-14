@@ -1,50 +1,22 @@
 package org.tms.page;
 
-import lombok.extern.log4j.Log4j2;
+import  lombok.extern.log4j.Log4j2;
+import org.tms.elements.DropDown;
+import org.tms.elements.InputFields;
+import org.tms.model.Address;
+import org.tms.util.Waiter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-
 @Log4j2
+
 public class AddressPage extends Page {
-    @FindBy(xpath = "//input[@id='firstname']")
-    private WebElement firstName;
-
-    @FindBy(xpath = "//input[@id='lastname']")
-    private WebElement lastName;
-
-    @FindBy(xpath = "//input[@id='address1']")
-    private WebElement address;
-
-    @FindBy(xpath = "//input[@id='postcode']")
-    private WebElement zipcode;
-
-    @FindBy(xpath = "//input[@id='city']")
-    private WebElement city;
-
-    @FindBy(xpath = "//input[@id='phone']")
-    private WebElement phoneHome;
-
-    @FindBy(xpath = "//input[@id='phone_mobile']")
-    private WebElement phoneMobile;
-
-    @FindBy(xpath = "//div[@id='uniform-id_state']")
-    private WebElement stateButton;
-
-    @FindBy(xpath = "//select[@id='id_state']//option[@value='337']")
-    private WebElement stateNameButton; //здесь падает , нужен ввод буквы А
 
     @FindBy(xpath = "//button[@id='submitAddress']")
-    private WebElement saveAddressButton;
+    private WebElement saveButton;
 
-    @FindBy(xpath = "//p[contains(text(), 'There are 3 errors ')]")
-    private WebElement  errorsAddress;
-
-    @FindBy(xpath = "//strong[contains(text(), 'Your addresses are listed below.')]")
-    private WebElement messageAddress;
-
-    @FindBy(xpath = "//h3[contains(text(), 'My address')]")
-    private WebElement blockNameMyAddress;
+    @FindBy(xpath = "//h3[@class='page-subheading']")
+    private WebElement nameOfAddress;
 
     @FindBy(xpath = "//a[@title='Delete']")
     private WebElement deleteAddressButton;
@@ -55,103 +27,92 @@ public class AddressPage extends Page {
     @FindBy(xpath = "//a[@class='logout']")
     private WebElement logoutButton;
 
+    @FindBy(xpath = "//p[contains(text(), ' There are 3 errors ')]")
+    private WebElement modifyAddressMessage;
+
+
 
     public AddressPage openPage(String url) {
-        log.info ("Open address page by URL");
+        log.info("Open address page by URL");
         driver.get(url);
         return this;
     }
 
-    public AddressPage fillInFirstName(String firstNameString) {
+    public AddressPage firstNameInput(Address address) {
         log.info("Entering a name");
-        firstName.clear();
-        firstName.sendKeys(firstNameString);
+        new InputFields("firstname").writeText(address.getFirstName());
         return this;
     }
 
-    public AddressPage fillInLastName(String lastNameString) {
-        log.info("Entering Last Name");
-        lastName.clear();
-        lastName.sendKeys(lastNameString);
+    public AddressPage lastNameInput(Address address) {
+        log.info("Entering a last name");
+        new InputFields("lastname").writeText(address.getLastName());
         return this;
     }
 
-    public AddressPage fillAddress(String addressString) {
+    public AddressPage addressInput(Address address) {
         log.info("Entering an address");
-        address.clear();
-        address.sendKeys(addressString);
+        new InputFields("address1").writeText(address.getAddress());
         return this;
     }
 
-
-    public AddressPage fillInZipCode(String zipCodeString) {
+    public AddressPage zipInput(Address address) {
         log.info("Entering a zip code");
-        zipcode.clear();
-        zipcode.sendKeys(zipCodeString);
+        new InputFields("postcode").writeText(address.getZip());
+        return this;
+    }
+    public AddressPage zipFalseInput(Address address) {
+        log.info("Entering a zip code false");
+        new InputFields("postcode").writeText(address.getZipFalse());
         return this;
     }
 
-    public AddressPage fillInCity(String cityString) {
-        log.info("Entering a city");
-        city.clear();
-        city.sendKeys(cityString);
+    public AddressPage cityInput(Address address) {
+        log.info("Entering a name of the city");
+        new InputFields("city").writeText(address.getCity());
         return this;
     }
 
-    public AddressPage fillInPhoneHome(String phoneHomeString) {
-        log.info("Entering a phone home");
-        phoneHome.clear();
-        phoneHome.sendKeys(phoneHomeString);
+    public AddressPage homePhoneInput(Address address) {
+        log.info("Entering a home phone");
+        new InputFields("phone").writeText(address.getHomePhone());
         return this;
     }
 
-    public AddressPage fillInPhoneMobile(String phoneMobileString) {
-        log.info("Entering a phone mobile");
-        phoneMobile.clear();
-        phoneMobile.sendKeys(phoneMobileString);
+    public AddressPage addressTitleInput(Address address) {
+        log.info("Entering a title of address");
+        new InputFields("alias").writeText(address.getAddressTitle());
         return this;
     }
 
-    public void clickDropDownListButton() {
-        log.info("Clicking a dropdown");
-        stateButton.click();
+    public AddressPage chooseACountry(Address address) {
+        log.info("Choosing a country");
+        new DropDown("uniform-id_country").selectOption(address.getCountry());
+        return this;
     }
 
-    public AddressPage fillInState(String stateString) {
-        log.info("Entering a state");
-        stateButton.sendKeys(stateString);
-        return this;}
-
-    // public void clickNameStateButton(String state) {
-       // log.info("Clicking a state");
-       // stateNameButton.click();
-    //}
-
-    public void clickSaveAddressButton() {
-        log.info("Clicking ont he save Button");
-        saveAddressButton.click();
+    public AddressPage chooseAState(Address address) {
+        log.info("Choosing a state");
+        new DropDown("uniform-id_state").selectOption(address.getState());
+        return this;
     }
 
-    public String getTheTextAddressError() {
-        log.info("Getting a text of name of address errors");
-        return errorsAddress.getText();
+    public void clickSaveButton() {
+        log.info("Clicking on the save button");
+        saveButton.click();
     }
 
-
-    public String getTheTextAboutCreatingNewAddress() {
+    public String getTextOfNameOfAddress() {
         log.info("Getting a text of name of address");
-        return messageAddress.getText(); //
-
+        Waiter.waitVisibilityOfElement(driver, nameOfAddress);
+        return nameOfAddress.getText();
     }
-    public String getTheTextBlockNameMyAddress() { // не подсвечивает ?
-        log.info("Getting a text of name block of address");
-        return blockNameMyAddress.getText(); // текст о наличии блоа  адрес
 
-    }
     public void clickDeleteAddressButton() {
         log.info("Clicking on the delete address button");
         deleteAddressButton.click();
     }
+
     public String getText() {
         log.info("Getting text from the button (for assert)");
         return availableAddressesButton.getText();
@@ -162,6 +123,13 @@ public class AddressPage extends Page {
         log.info("Clicking on the logout button");
         logoutButton.click();
     }
+
+    public String getTextModifyAddress() {
+        log.info("Getting a text modify Address");
+        Waiter.waitVisibilityOfElement(driver, nameOfAddress);
+        return modifyAddressMessage.getText();
+    }
+
 }
 
 

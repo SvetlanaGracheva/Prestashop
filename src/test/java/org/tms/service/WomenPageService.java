@@ -23,20 +23,17 @@ public class WomenPageService {
         return cartPage.descriptionItemInTheCart();
     }
 
-    public String changeTheCurrencyOnTheWebsite(){
+    public WomenPageService changeTheCurrencyOnTheWebsite() {
         loginPageService.login();
         myAccountPage.clickPageTitleWomen();
         womenPage.clickCurrencyListButton();
         womenPage.clickCurrencySelectionButton();
-        return womenPage.getTextСurrencyPresenceOnThePage();
+        return new WomenPageService();
+
+
 
     }
-
-    public String getTextСurrencyPresenceOnThePage(){
-        return womenPage.getTextСurrencyPresenceOnThePage(); //валюта на странице
-
-    }
-    public String getTextCurrencyOnTheSite(){
+        public String getTitleCurrencyOnTheSite(){
         return womenPage.getTextCurrencyOnTheSite();
     }
 
@@ -45,9 +42,6 @@ public class WomenPageService {
         myAccountPage.clickPageTitleWomen();
         womenPage.clickLanguageListButton();
         womenPage.clickLanguageListButton();
-    }
-    public String getTextLanguagePresenceOnThePage(){
-        return womenPage.getTextLanguagePresenceOnThePage();
     }
 
     public String getTextLanguageOnTheSite(){

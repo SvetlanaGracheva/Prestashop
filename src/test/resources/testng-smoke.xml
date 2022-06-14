@@ -3,7 +3,7 @@
 <suite thread-count="2" name="Test suite" verbose="1" parallel="classes">
     <test name="LoginPageTest">
         <classes>
-            <class name="org.tms.test.CreateAccountTest" />
+            <class name="org.tms.test.WomenPageChangeParametersTest" />
         </classes>
     </test>
 

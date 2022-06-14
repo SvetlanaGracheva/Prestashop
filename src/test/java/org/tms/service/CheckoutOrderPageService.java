@@ -4,12 +4,12 @@ import org.tms.page.CheckoutOrderPage;
 
 public class CheckoutOrderPageService {
     WomenPageService womenPageService= new WomenPageService();
-    AddressService addressService=new AddressService();
+    AddressPageService addressPageService=new AddressPageService();
     CartPageService cartPageService= new CartPageService();
     CheckoutOrderPage checkoutOrderPage= new CheckoutOrderPage();
 
     public void order(){
-        addressService.createYourAddress();
+        addressPageService.createYourAddress();
         womenPageService.addItemToCart();
         cartPageService.clickOnProceedToCheckoutButton();
         checkoutOrderPage.clickOnProceedToCheckoutButton();
@@ -23,7 +23,7 @@ public class CheckoutOrderPageService {
         return checkoutOrderPage.getTextOfOrderConfirmationMessage();
     }
     public void deleteAddress ()
-    {addressService.deleteAddress();
+    {addressPageService.deleteAddress();
     }
 }
 

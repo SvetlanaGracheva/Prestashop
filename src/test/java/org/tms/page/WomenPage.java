@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.tms.driver.DriverSingleton;
+import org.tms.util.Waiter;
 
 @Log4j2
 public class WomenPage extends Page {
@@ -34,10 +35,7 @@ public class WomenPage extends Page {
     @FindBy(xpath = "//a[contains(text(), 'Евро')]")
     private WebElement currencySelectionButton; //выбор валюты
 
-    @FindBy(xpath = "//span[contains(text(), '€')]")
-    private WebElement currencyPresenceOnThePage;//наличие валюты на странице
-
-    @FindBy(xpath = "//span[contains(text(), '€')]")
+     @FindBy(xpath = "//strong[contains(text(), 'EUR')]")
     private WebElement currencyOnTheSite; //валюта сайта , строка сверху
 
     @FindBy(xpath = "//div[@id='languages-block-top']")
@@ -49,8 +47,6 @@ public class WomenPage extends Page {
     @FindBy(xpath = " //div[@class='current']//span[contains(text(), 'Українська')]")
     private WebElement languageOnTheSite;
 
-    @FindBy(xpath = "//b[contains(text(), 'Кошик:')]")
-    private WebElement languagePresenceOnThePage;//наличие языка на странице
 
 
     public void clickCurrencyListButton() {
@@ -60,17 +56,14 @@ public class WomenPage extends Page {
 
     public void clickCurrencySelectionButton() {
         log.info("Clicking on the currency select");
+        Waiter.waitVisibilityOfElement(driver, currencySelectionButton);
         currencySelectionButton.click(); //валюта
     }
 
-    public String getTextСurrencyPresenceOnThePage() {
-        log.info("Getting currency presence on the page");
-        return currencyPresenceOnThePage.getText(); //
-    }
 
     public String getTextCurrencyOnTheSite() {
         log.info("Getting currency received on the top line");
-        return currencyOnTheSite.getText(); //валюта на сайте сврху строка
+        return currencyOnTheSite.getText();
     }
 
     public void clickLanguageListButton() {
@@ -80,17 +73,13 @@ public class WomenPage extends Page {
 
     public void clickLanguageSelection() {
         log.info("Clicking on the language select");
+        Waiter.waitVisibilityOfElement(driver, languageSelectionButton);
         languageSelectionButton.click();
     }
 
     public String getTextLanguageOnTheSite() {
         log.info("Getting language received on the top line");
         return languageOnTheSite.getText();
-    }
-
-    public String getTextLanguagePresenceOnThePage() {
-        log.info("Getting language presence on the page");
-        return languagePresenceOnThePage.getText();
     }
 
     public void clickToAddToCartButton() {
