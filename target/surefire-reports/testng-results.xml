@@ -2,68 +2,68 @@
 <testng-results skipped="0" failed="3" ignored="0" total="10" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Test suite" duration-ms="215664" started-at="2022-06-15T10:19:05 EEST" finished-at="2022-06-15T10:22:41 EEST">
+  <suite name="Test suite" duration-ms="316045" started-at="2022-06-15T15:59:57 EEST" finished-at="2022-06-15T16:05:13 EEST">
     <groups>
     </groups>
-    <test name="CreateAccountTest" duration-ms="42310" started-at="2022-06-15T10:19:05 EEST" finished-at="2022-06-15T10:19:48 EEST">
+    <test name="CreateAccountTest" duration-ms="101010" started-at="2022-06-15T15:59:57 EEST" finished-at="2022-06-15T16:01:38 EEST">
       <class name="org.tms.test.CreateAccountTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.CreateAccountTest@1a2e2935]" name="setUp" is-config="true" duration-ms="25930" started-at="2022-06-15T10:19:05 EEST" finished-at="2022-06-15T10:19:31 EEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.CreateAccountTest@1a2e2935]" name="setUp" is-config="true" duration-ms="89229" started-at="2022-06-15T15:59:57 EEST" finished-at="2022-06-15T16:01:26 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createAccountTest()[pri:0, instance:org.tms.test.CreateAccountTest@1a2e2935]" name="createAccountTest" duration-ms="14413" started-at="2022-06-15T10:19:31 EEST" finished-at="2022-06-15T10:19:46 EEST">
+        <test-method status="PASS" signature="createAccountTest()[pri:0, instance:org.tms.test.CreateAccountTest@1a2e2935]" name="createAccountTest" duration-ms="9192" started-at="2022-06-15T16:01:26 EEST" finished-at="2022-06-15T16:01:35 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccountTest -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.CreateAccountTest@1a2e2935]" name="stopBrowser" is-config="true" duration-ms="1469" started-at="2022-06-15T10:19:46 EEST" finished-at="2022-06-15T10:19:48 EEST">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.CreateAccountTest@1a2e2935]" name="stopBrowser" is-config="true" duration-ms="1387" started-at="2022-06-15T16:01:36 EEST" finished-at="2022-06-15T16:01:38 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- org.tms.test.CreateAccountTest -->
     </test> <!-- CreateAccountTest -->
-    <test name="LoginPageTest" duration-ms="15866" started-at="2022-06-15T10:19:48 EEST" finished-at="2022-06-15T10:20:04 EEST">
+    <test name="LoginPageTest" duration-ms="20962" started-at="2022-06-15T16:01:38 EEST" finished-at="2022-06-15T16:01:59 EEST">
       <class name="org.tms.test.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.LoginPageTest@5bd73d1a]" name="setUp" is-config="true" duration-ms="10662" started-at="2022-06-15T10:19:48 EEST" finished-at="2022-06-15T10:19:58 EEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.LoginPageTest@5bd73d1a]" name="setUp" is-config="true" duration-ms="14350" started-at="2022-06-15T16:01:38 EEST" finished-at="2022-06-15T16:01:52 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:org.tms.test.LoginPageTest@5bd73d1a]" name="loginTest" duration-ms="4428" started-at="2022-06-15T10:19:58 EEST" finished-at="2022-06-15T10:20:03 EEST">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:org.tms.test.LoginPageTest@5bd73d1a]" name="loginTest" duration-ms="3577" started-at="2022-06-15T16:01:52 EEST" finished-at="2022-06-15T16:01:56 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.LoginPageTest@5bd73d1a]" name="stopBrowser" is-config="true" duration-ms="768" started-at="2022-06-15T10:20:03 EEST" finished-at="2022-06-15T10:20:04 EEST">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.LoginPageTest@5bd73d1a]" name="stopBrowser" is-config="true" duration-ms="3030" started-at="2022-06-15T16:01:56 EEST" finished-at="2022-06-15T16:01:59 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- org.tms.test.LoginPageTest -->
     </test> <!-- LoginPageTest -->
-    <test name="AddressPageTest" duration-ms="30688" started-at="2022-06-15T10:20:04 EEST" finished-at="2022-06-15T10:20:34 EEST">
+    <test name="AddressPageTest" duration-ms="27086" started-at="2022-06-15T16:01:59 EEST" finished-at="2022-06-15T16:02:26 EEST">
       <class name="org.tms.test.AddressPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.AddressPageTest@173b9122]" name="setUp" is-config="true" duration-ms="11190" started-at="2022-06-15T10:20:04 EEST" finished-at="2022-06-15T10:20:15 EEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.AddressPageTest@173b9122]" name="setUp" is-config="true" duration-ms="10675" started-at="2022-06-15T16:01:59 EEST" finished-at="2022-06-15T16:02:09 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createAddressTest()[pri:0, instance:org.tms.test.AddressPageTest@173b9122]" name="createAddressTest" duration-ms="9639" started-at="2022-06-15T10:20:15 EEST" finished-at="2022-06-15T10:20:25 EEST">
+        <test-method status="PASS" signature="createAddressTest()[pri:0, instance:org.tms.test.AddressPageTest@173b9122]" name="createAddressTest" duration-ms="10109" started-at="2022-06-15T16:02:09 EEST" finished-at="2022-06-15T16:02:20 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAddressTest -->
-        <test-method status="PASS" signature="deleteAddressTest()[pri:0, instance:org.tms.test.AddressPageTest@173b9122]" name="deleteAddressTest" duration-ms="7094" started-at="2022-06-15T10:20:25 EEST" finished-at="2022-06-15T10:20:32 EEST">
+        <test-method status="PASS" signature="deleteAddressTest()[pri:0, instance:org.tms.test.AddressPageTest@173b9122]" name="deleteAddressTest" duration-ms="4369" started-at="2022-06-15T16:02:20 EEST" finished-at="2022-06-15T16:02:24 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteAddressTest -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.AddressPageTest@173b9122]" name="stopBrowser" is-config="true" duration-ms="2614" started-at="2022-06-15T10:20:32 EEST" finished-at="2022-06-15T10:20:34 EEST">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.AddressPageTest@173b9122]" name="stopBrowser" is-config="true" duration-ms="1919" started-at="2022-06-15T16:02:24 EEST" finished-at="2022-06-15T16:02:26 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- org.tms.test.AddressPageTest -->
     </test> <!-- AddressPageTest -->
-    <test name="AddressPageFalseTest" duration-ms="37402" started-at="2022-06-15T10:20:34 EEST" finished-at="2022-06-15T10:21:12 EEST">
+    <test name="AddressPageFalseTest" duration-ms="35863" started-at="2022-06-15T16:02:26 EEST" finished-at="2022-06-15T16:03:02 EEST">
       <class name="org.tms.test.AddressPageFalseTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.AddressPageFalseTest@2449cff7]" name="setUp" is-config="true" duration-ms="3328" started-at="2022-06-15T10:20:34 EEST" finished-at="2022-06-15T10:20:38 EEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.AddressPageFalseTest@2449cff7]" name="setUp" is-config="true" duration-ms="9388" started-at="2022-06-15T16:02:27 EEST" finished-at="2022-06-15T16:02:36 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="createAddressFalseTest()[pri:0, instance:org.tms.test.AddressPageFalseTest@2449cff7]" name="createAddressFalseTest" duration-ms="31625" started-at="2022-06-15T10:20:38 EEST" finished-at="2022-06-15T10:21:09 EEST">
+        <test-method status="FAIL" signature="createAddressFalseTest()[pri:0, instance:org.tms.test.AddressPageFalseTest@2449cff7]" name="createAddressFalseTest" duration-ms="22732" started-at="2022-06-15T16:02:36 EEST" finished-at="2022-06-15T16:02:59 EEST">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h3[@class='page-subheading']' (tried for 15 second(s) with 500 milliseconds interval)]]>
@@ -101,8 +101,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6dbd805bdbab0aa51d1404d158c57d2e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55188}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 07c3a4afd5576088d1cbf34dbcc2fc56
 *** Element info: {Using=xpath, value=//h3[@class='page-subheading']}
 at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -132,72 +132,62 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAddressFalseTest -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.AddressPageFalseTest@2449cff7]" name="stopBrowser" is-config="true" duration-ms="677" started-at="2022-06-15T10:21:11 EEST" finished-at="2022-06-15T10:21:12 EEST">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.AddressPageFalseTest@2449cff7]" name="stopBrowser" is-config="true" duration-ms="813" started-at="2022-06-15T16:03:01 EEST" finished-at="2022-06-15T16:03:02 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- org.tms.test.AddressPageFalseTest -->
     </test> <!-- AddressPageFalseTest -->
-    <test name="ChangeLanguagePageTest" duration-ms="16842" started-at="2022-06-15T10:21:12 EEST" finished-at="2022-06-15T10:21:29 EEST">
+    <test name="ChangeLanguagePageTest" duration-ms="23247" started-at="2022-06-15T16:03:02 EEST" finished-at="2022-06-15T16:03:26 EEST">
       <class name="org.tms.test.ChangeLanguagePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.ChangeLanguagePageTest@71e9a896]" name="setUp" is-config="true" duration-ms="3852" started-at="2022-06-15T10:21:12 EEST" finished-at="2022-06-15T10:21:16 EEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.ChangeLanguagePageTest@71e9a896]" name="setUp" is-config="true" duration-ms="14154" started-at="2022-06-15T16:03:03 EEST" finished-at="2022-06-15T16:03:17 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="changeTheLanguageOnTheWebsiteTest()[pri:0, instance:org.tms.test.ChangeLanguagePageTest@71e9a896]" name="changeTheLanguageOnTheWebsiteTest" duration-ms="12302" started-at="2022-06-15T10:21:16 EEST" finished-at="2022-06-15T10:21:28 EEST">
+        <test-method status="PASS" signature="changeTheLanguageOnTheWebsiteTest()[pri:0, instance:org.tms.test.ChangeLanguagePageTest@71e9a896]" name="changeTheLanguageOnTheWebsiteTest" duration-ms="7707" started-at="2022-06-15T16:03:17 EEST" finished-at="2022-06-15T16:03:24 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeTheLanguageOnTheWebsiteTest -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.ChangeLanguagePageTest@71e9a896]" name="stopBrowser" is-config="true" duration-ms="679" started-at="2022-06-15T10:21:28 EEST" finished-at="2022-06-15T10:21:29 EEST">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.ChangeLanguagePageTest@71e9a896]" name="stopBrowser" is-config="true" duration-ms="929" started-at="2022-06-15T16:03:24 EEST" finished-at="2022-06-15T16:03:25 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- org.tms.test.ChangeLanguagePageTest -->
     </test> <!-- ChangeLanguagePageTest -->
-    <test name="ChangeCurrencyPageTest" duration-ms="12785" started-at="2022-06-15T10:21:29 EEST" finished-at="2022-06-15T10:21:42 EEST">
+    <test name="ChangeCurrencyPageTest" duration-ms="18832" started-at="2022-06-15T16:03:26 EEST" finished-at="2022-06-15T16:03:45 EEST">
       <class name="org.tms.test.ChangeCurrencyPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.ChangeCurrencyPageTest@fac80]" name="setUp" is-config="true" duration-ms="3154" started-at="2022-06-15T10:21:29 EEST" finished-at="2022-06-15T10:21:32 EEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.ChangeCurrencyPageTest@fac80]" name="setUp" is-config="true" duration-ms="7829" started-at="2022-06-15T16:03:26 EEST" finished-at="2022-06-15T16:03:34 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="changeTheLanguageOnTheWebsiteTest()[pri:0, instance:org.tms.test.ChangeCurrencyPageTest@fac80]" name="changeTheLanguageOnTheWebsiteTest" duration-ms="6865" started-at="2022-06-15T10:21:32 EEST" finished-at="2022-06-15T10:21:39 EEST">
+        <test-method status="PASS" signature="changeTheLanguageOnTheWebsiteTest()[pri:0, instance:org.tms.test.ChangeCurrencyPageTest@fac80]" name="changeTheLanguageOnTheWebsiteTest" duration-ms="6843" started-at="2022-06-15T16:03:34 EEST" finished-at="2022-06-15T16:03:41 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeTheLanguageOnTheWebsiteTest -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.ChangeCurrencyPageTest@fac80]" name="stopBrowser" is-config="true" duration-ms="2761" started-at="2022-06-15T10:21:39 EEST" finished-at="2022-06-15T10:21:42 EEST">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.ChangeCurrencyPageTest@fac80]" name="stopBrowser" is-config="true" duration-ms="4151" started-at="2022-06-15T16:03:41 EEST" finished-at="2022-06-15T16:03:45 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- org.tms.test.ChangeCurrencyPageTest -->
     </test> <!-- ChangeCurrencyPageTest -->
-    <test name="CartPageTest" duration-ms="28008" started-at="2022-06-15T10:21:42 EEST" finished-at="2022-06-15T10:22:10 EEST">
+    <test name="CartPageTest" duration-ms="44095" started-at="2022-06-15T16:03:45 EEST" finished-at="2022-06-15T16:04:29 EEST">
       <class name="org.tms.test.CartPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.CartPageTest@5bd1ceca]" name="setUp" is-config="true" duration-ms="2476" started-at="2022-06-15T10:21:42 EEST" finished-at="2022-06-15T10:21:44 EEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.CartPageTest@5bd1ceca]" name="setUp" is-config="true" duration-ms="11781" started-at="2022-06-15T16:03:45 EEST" finished-at="2022-06-15T16:03:57 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="addItemToCartTest()[pri:0, instance:org.tms.test.CartPageTest@5bd1ceca]" name="addItemToCartTest" duration-ms="23771" started-at="2022-06-15T10:21:44 EEST" finished-at="2022-06-15T10:22:08 EEST">
+        <test-method status="FAIL" signature="addItemToCartTest()[pri:0, instance:org.tms.test.CartPageTest@5bd1ceca]" name="addItemToCartTest" duration-ms="30149" started-at="2022-06-15T16:03:57 EEST" finished-at="2022-06-15T16:04:27 EEST">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (b29651aa4549a095987dad32799894ef)] -> xpath: //div[@class='button-container']//a[@data-id-product='1']] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b29651aa4549a095987dad32799894ef]]>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: ////a[@rel='nofollow']//span[@class='ajax_cart_quantity']' (tried for 15 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (b29651aa4549a095987dad32799894ef)] -> xpath: //div[@class='button-container']//a[@data-id-product='1']] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b29651aa4549a095987dad32799894ef
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: ////a[@rel='nofollow']//span[@class='ajax_cart_quantity']' (tried for 15 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at org.tms.util.Waiter.waitVisibilityOfElement(Waiter.java:15)
-at org.tms.page.WomenPage.clickToAddToCartButton(WomenPage.java:33)
-at org.tms.service.WomenPageService.addItemToCart_aroundBody0(WomenPageService.java:18)
+at org.tms.page.WomenPage.clickToCartButton(WomenPage.java:45)
+at org.tms.service.WomenPageService.addItemToCart_aroundBody0(WomenPageService.java:20)
 at org.tms.service.WomenPageService$AjcClosure1.run(WomenPageService.java:1)
 at org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)
 at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:51)
@@ -218,25 +208,57 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 at java.lang.Thread.run(Thread.java:750)
+Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression ////a[@rel='nofollow']//span[@class='ajax_cart_quantity'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '////a[@rel='nofollow']//span[@class='ajax_cart_quantity']' is not a valid XPath expression.
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55277}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d1da3e26f7c00bce55c2235aa17e88a
+*** Element info: {Using=xpath, value=////a[@rel='nofollow']//span[@class='ajax_cart_quantity']}
+at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 23 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToCartTest -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.CartPageTest@5bd1ceca]" name="stopBrowser" is-config="true" duration-ms="708" started-at="2022-06-15T10:22:09 EEST" finished-at="2022-06-15T10:22:10 EEST">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.CartPageTest@5bd1ceca]" name="stopBrowser" is-config="true" duration-ms="1166" started-at="2022-06-15T16:04:28 EEST" finished-at="2022-06-15T16:04:29 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- org.tms.test.CartPageTest -->
     </test> <!-- CartPageTest -->
-    <test name="CheckoutOrderPageTest" duration-ms="18236" started-at="2022-06-15T10:22:10 EEST" finished-at="2022-06-15T10:22:28 EEST">
+    <test name="CheckoutOrderPageTest" duration-ms="32110" started-at="2022-06-15T16:04:29 EEST" finished-at="2022-06-15T16:05:01 EEST">
       <class name="org.tms.test.CheckoutOrderPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.CheckoutOrderPageTest@70e659aa]" name="setUp" is-config="true" duration-ms="3401" started-at="2022-06-15T10:22:10 EEST" finished-at="2022-06-15T10:22:13 EEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.CheckoutOrderPageTest@70e659aa]" name="setUp" is-config="true" duration-ms="5902" started-at="2022-06-15T16:04:29 EEST" finished-at="2022-06-15T16:04:35 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="checkoutOrderTest()[pri:0, instance:org.tms.test.CheckoutOrderPageTest@70e659aa]" name="checkoutOrderTest" duration-ms="13097" started-at="2022-06-15T10:22:13 EEST" finished-at="2022-06-15T10:22:27 EEST">
+        <test-method status="FAIL" signature="checkoutOrderTest()[pri:0, instance:org.tms.test.CheckoutOrderPageTest@70e659aa]" name="checkoutOrderTest" duration-ms="25005" started-at="2022-06-15T16:04:35 EEST" finished-at="2022-06-15T16:05:00 EEST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='email']"}
@@ -245,8 +267,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52390}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d9d04c5ef2d59d8f3d1074fd99d2c5bd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a0c8624b4c0929148e0e7ad3d18bca8d
 *** Element info: {Using=xpath, value=//input[@id='email']}]]>
             </message>
             <full-stacktrace>
@@ -256,8 +278,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52390}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d9d04c5ef2d59d8f3d1074fd99d2c5bd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a0c8624b4c0929148e0e7ad3d18bca8d
 *** Element info: {Using=xpath, value=//input[@id='email']}
 at sun.reflect.GeneratedConstructorAccessor32.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -305,23 +327,23 @@ at java.lang.Thread.run(Thread.java:750)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutOrderTest -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.CheckoutOrderPageTest@70e659aa]" name="stopBrowser" is-config="true" duration-ms="1236" started-at="2022-06-15T10:22:27 EEST" finished-at="2022-06-15T10:22:28 EEST">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.CheckoutOrderPageTest@70e659aa]" name="stopBrowser" is-config="true" duration-ms="667" started-at="2022-06-15T16:05:00 EEST" finished-at="2022-06-15T16:05:01 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- org.tms.test.CheckoutOrderPageTest -->
     </test> <!-- CheckoutOrderPageTest -->
-    <test name="LoginSingOutTest" duration-ms="12708" started-at="2022-06-15T10:22:28 EEST" finished-at="2022-06-15T10:22:41 EEST">
+    <test name="LoginSingOutTest" duration-ms="11414" started-at="2022-06-15T16:05:01 EEST" finished-at="2022-06-15T16:05:13 EEST">
       <class name="org.tms.test.LoginSingOutTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.LoginSingOutTest@7249dadf]" name="setUp" is-config="true" duration-ms="2621" started-at="2022-06-15T10:22:28 EEST" finished-at="2022-06-15T10:22:31 EEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.LoginSingOutTest@7249dadf]" name="setUp" is-config="true" duration-ms="4682" started-at="2022-06-15T16:05:01 EEST" finished-at="2022-06-15T16:05:06 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginSignOutTest()[pri:0, instance:org.tms.test.LoginSingOutTest@7249dadf]" name="loginSignOutTest" duration-ms="9425" started-at="2022-06-15T10:22:31 EEST" finished-at="2022-06-15T10:22:40 EEST">
+        <test-method status="PASS" signature="loginSignOutTest()[pri:0, instance:org.tms.test.LoginSingOutTest@7249dadf]" name="loginSignOutTest" duration-ms="5443" started-at="2022-06-15T16:05:06 EEST" finished-at="2022-06-15T16:05:11 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSignOutTest -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.LoginSingOutTest@7249dadf]" name="stopBrowser" is-config="true" duration-ms="654" started-at="2022-06-15T10:22:40 EEST" finished-at="2022-06-15T10:22:41 EEST">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.LoginSingOutTest@7249dadf]" name="stopBrowser" is-config="true" duration-ms="1267" started-at="2022-06-15T16:05:11 EEST" finished-at="2022-06-15T16:05:13 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
