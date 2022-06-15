@@ -26,15 +26,20 @@
             <class name="org.tms.test.WomenPageChangeParametersTest"/>
         </classes>
     </test>
+    <test name="CartPageTest">
+        <classes>
+            <class name="org.tms.test.CartPageTest"/>
+        </classes>
+    </test>
     <test name="CheckoutOrderPageTest">
         <classes>
             <class name="org.tms.test.CheckoutOrderPageTest"/>
         </classes>
     </test>
     <test name="LoginSingOutTest">
-        <classes>
-            <class name="org.tms.test.LoginSingOutTest"/>
-        </classes>
+    <classes>
+    <class name="org.tms.test.LoginSingOutTest"/>
+    </classes>
     </test>
 
 </suite>

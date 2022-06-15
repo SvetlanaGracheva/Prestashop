@@ -18,7 +18,7 @@ public class AddressPageTest extends BaseTest {
     public void createAddressTest() {
         addressPageService.createYourAddress();
         String actualTitleOfAddress = addressPageService.getTitleOfAddressPage();
-        String expectedTitleOfAddress = "KIEV";
+        String expectedTitleOfAddress = "MINSK";
         Assert.assertTrue(actualTitleOfAddress.contains(expectedTitleOfAddress), "The actual title of the address does not match expected!");
     }
 
