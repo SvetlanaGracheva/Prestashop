@@ -10,7 +10,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class DropDown extends Page {
     private static final String DROP_DOWN_XPATH = "//div[@id='%s']";
     private static final String SELECT_OPTION_XPATH = "//select[@class='form-control']//option[contains(text(),'%s')]";
-    //    private static final String SELECT_LANGUAGE_XPATH = "//a[@title='%s']";
     private final String label;
 
 
