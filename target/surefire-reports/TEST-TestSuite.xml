@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="320.844" tests="10" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="64.5" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -20,7 +20,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_333\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\дом\AppData\Local\Temp\surefire3870437135727413123\surefirebooter7311432659952195051.jar C:\Users\дом\AppData\Local\Temp\surefire3870437135727413123 2022-06-15T15-59-49_921-jvmRun1 surefire2435795687708001129tmp surefire_04272644433230525077tmp"/>
+    <property name="sun.java.command" value="C:\Users\дом\AppData\Local\Temp\surefire1208472433374309071\surefirebooter9169704111541296563.jar C:\Users\дом\AppData\Local\Temp\surefire1208472433374309071 2022-06-15T19-20-34_567-jvmRun1 surefire2009058487775671614tmp surefire_01114427508274939377tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\дом\IdeaProjects\Prestashop\target\test-classes;C:\Users\дом\IdeaProjects\Prestashop\target\classes;C:\Users\дом\.m2\repository\org\testng\testng\7.0.0\testng-7.0.0.jar;C:\Users\дом\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\дом\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\дом\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\дом\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\дом\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\дом\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\дом\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\дом\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\дом\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\дом\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\дом\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\дом\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\дом\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\дом\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\дом\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\дом\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\дом\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\дом\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\дом\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\дом\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\дом\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\дом\.m2\repository\io\github\bonigarcia\webdrivermanager\5.1.0\webdrivermanager-5.1.0.jar;C:\Users\дом\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\дом\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\дом\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\дом\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\дом\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\дом\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\дом\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\дом\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\дом\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\дом\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\дом\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\дом\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\дом\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\дом\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\дом\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\дом\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\дом\.m2\repository\io\qameta\allure\allure-testng\2.7.0\allure-testng-2.7.0.jar;C:\Users\дом\.m2\repository\io\qameta\allure\allure-descriptions-javadoc\2.7.0\allure-descriptions-javadoc-2.7.0.jar;C:\Users\дом\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\дом\.m2\repository\io\qameta\allure\allure-java-commons\2.7.0\allure-java-commons-2.7.0.jar;C:\Users\дом\.m2\repository\io\qameta\allure\allure2-model-api\1.0.0\allure2-model-api-1.0.0.jar;C:\Users\дом\.m2\repository\io\qameta\allure\allure2-model-pojo\1.0.0\allure2-model-pojo-1.0.0.jar;C:\Users\дом\.m2\repository\org\apache\tika\tika-core\1.14\tika-core-1.14.jar;C:\Users\дом\.m2\repository\io\qameta\allure\allure2-model-jackson\1.0.0\allure2-model-jackson-1.0.0.jar;C:\Users\дом\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.7.0\jackson-module-jaxb-annotations-2.7.0.jar;C:\Users\дом\.m2\repository\org\aspectj\aspectjrt\1.9.1\aspectjrt-1.9.1.jar;C:\Users\дом\.m2\repository\org\jooq\joor-java-8\0.9.9\joor-java-8-0.9.9.jar;C:\Users\дом\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\дом\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.2\log4j-core-2.17.2.jar;C:\Users\дом\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\дом\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.13.2\jackson-dataformat-yaml-2.13.2.jar;C:\Users\дом\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2\jackson-databind-2.13.2.jar;C:\Users\дом\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\дом\.m2\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;C:\Users\дом\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\дом\.m2\repository\org\slf4j\slf4j-reload4j\1.7.35\slf4j-reload4j-1.7.35.jar;C:\Users\дом\.m2\repository\ch\qos\reload4j\reload4j\1.2.18.3\reload4j-1.2.18.3.jar;C:\Users\дом\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\дом\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\дом\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\дом\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\дом\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\дом\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\дом\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\дом\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\дом\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\дом\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\дом\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\дом\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\дом\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\дом\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\дом\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\дом\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\дом\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\дом\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\дом"/>
@@ -33,7 +33,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\дом\AppData\Local\Temp\surefire3870437135727413123\surefirebooter7311432659952195051.jar;C:\Users\дом\.m2\repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\дом\AppData\Local\Temp\surefire1208472433374309071\surefirebooter9169704111541296563.jar;C:\Users\дом\.m2\repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_333\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_333\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -64,334 +64,40 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="createAccountTest" classname="org.tms.test.CreateAccountTest" time="9.175">
+  <testcase name="createAccountTest" classname="org.tms.test.CreateAccountTest" time="18.322">
     <system-out><![CDATA[======================================== STARTING TEST createAccountTest ========================================
 ======================================== STARTING TEST createAccountTest ========================================
-======================================== STARTING TEST createAccountTest ========================================
-======================================== STARTING TEST createAccountTest ========================================
-======================================== STARTING TEST createAccountTest ========================================
-======================================== STARTING TEST createAccountTest ========================================
-======================================== STARTING TEST createAccountTest ========================================
-======================================== STARTING TEST createAccountTest ========================================
-======================================== STARTING TEST createAccountTest ========================================
-2022-06-15 16:01:27.184 INFO [TestNG-test=CreateAccountTest-1] [org.tms.page.LoginPage] - Opening page by URL
-2022-06-15 16:01:30.091 INFO [TestNG-test=CreateAccountTest-1] [org.tms.page.LoginPage] - Entering email address to create
-2022-06-15 16:01:31.755 INFO [TestNG-test=CreateAccountTest-1] [org.tms.page.LoginPage] - Clicking the button create
-======================================== FINISHED TEST createAccountTest Duration: 9s ========================================
+2022-06-15 19:21:01.466 INFO [TestNG-test=CreateAccountTest-1] [org.tms.page.LoginPage] - Opening page by URL
+2022-06-15 19:21:04.823 INFO [TestNG-test=CreateAccountTest-1] [org.tms.page.LoginPage] - Entering email address to create
+2022-06-15 19:21:05.362 INFO [TestNG-test=CreateAccountTest-1] [org.tms.page.LoginPage] - Clicking the button create
+======================================== FINISHED TEST createAccountTest Duration: 18s ========================================
 ]]></system-out>
     <system-err><![CDATA[log4j:WARN No appenders could be found for logger (io.github.bonigarcia.wdm.cache.ResolutionCache).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 16810
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 21143
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-июн 15, 2022 4:01:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+июн 15, 2022 7:20:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="loginTest" classname="org.tms.test.LoginPageTest" time="3.554">
-    <system-out><![CDATA[======================================== FINISHED TEST createAccountTest Duration: 9s ========================================
-======================================== FINISHED TEST createAccountTest Duration: 9s ========================================
-======================================== FINISHED TEST createAccountTest Duration: 9s ========================================
-======================================== FINISHED TEST createAccountTest Duration: 9s ========================================
-======================================== FINISHED TEST createAccountTest Duration: 9s ========================================
-======================================== FINISHED TEST createAccountTest Duration: 9s ========================================
-======================================== FINISHED TEST createAccountTest Duration: 9s ========================================
-======================================== FINISHED TEST createAccountTest Duration: 9s ========================================
+  <testcase name="loginTest" classname="org.tms.test.LoginPageTest" time="3.791">
+    <system-out><![CDATA[======================================== FINISHED TEST createAccountTest Duration: 18s ========================================
 ======================================== STARTING TEST loginTest ========================================
-======================================== STARTING TEST loginTest ========================================
-======================================== STARTING TEST loginTest ========================================
-======================================== STARTING TEST loginTest ========================================
-======================================== STARTING TEST loginTest ========================================
-======================================== STARTING TEST loginTest ========================================
-======================================== STARTING TEST loginTest ========================================
-======================================== STARTING TEST loginTest ========================================
-2022-06-15 16:01:52.618 INFO [TestNG-test=LoginPageTest-1] [org.tms.page.LoginPage] - Opening page by URL
-2022-06-15 16:01:54.376 INFO [TestNG-test=LoginPageTest-1] [org.tms.page.LoginPage] - Entering email address
-2022-06-15 16:01:54.619 INFO [TestNG-test=LoginPageTest-1] [org.tms.page.LoginPage] - Entering  password
-2022-06-15 16:01:54.806 INFO [TestNG-test=LoginPageTest-1] [org.tms.page.LoginPage] - Clicking the sing in button
-2022-06-15 16:01:56.125 INFO [TestNG-test=LoginPageTest-1] [org.tms.page.MyAccountPage] - Getting the page name
+2022-06-15 19:21:36.317 INFO [TestNG-test=LoginPageTest-1] [org.tms.page.LoginPage] - Opening page by URL
+2022-06-15 19:21:37.969 INFO [TestNG-test=LoginPageTest-1] [org.tms.page.LoginPage] - Entering email address
+2022-06-15 19:21:38.225 INFO [TestNG-test=LoginPageTest-1] [org.tms.page.LoginPage] - Entering  password
+2022-06-15 19:21:38.497 INFO [TestNG-test=LoginPageTest-1] [org.tms.page.LoginPage] - Clicking the sing in button
+2022-06-15 19:21:40.052 INFO [TestNG-test=LoginPageTest-1] [org.tms.page.MyAccountPage] - Getting the page name
 ======================================== FINISHED TEST loginTest Duration: 3s ========================================
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 38160
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 24525
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-июн 15, 2022 4:01:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="createAddressTest" classname="org.tms.test.AddressPageTest" time="10.029">
-    <system-out><![CDATA[======================================== FINISHED TEST loginTest Duration: 3s ========================================
-======================================== FINISHED TEST loginTest Duration: 3s ========================================
-======================================== FINISHED TEST loginTest Duration: 3s ========================================
-======================================== FINISHED TEST loginTest Duration: 3s ========================================
-======================================== FINISHED TEST loginTest Duration: 3s ========================================
-======================================== FINISHED TEST loginTest Duration: 3s ========================================
-======================================== FINISHED TEST loginTest Duration: 3s ========================================
-======================================== STARTING TEST createAddressTest ========================================
-======================================== STARTING TEST createAddressTest ========================================
-======================================== STARTING TEST createAddressTest ========================================
-======================================== STARTING TEST createAddressTest ========================================
-======================================== STARTING TEST createAddressTest ========================================
-======================================== STARTING TEST createAddressTest ========================================
-======================================== STARTING TEST createAddressTest ========================================
-2022-06-15 16:02:10.339 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.LoginPage] - Opening page by URL
-2022-06-15 16:02:11.944 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.LoginPage] - Entering email address
-2022-06-15 16:02:12.244 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.LoginPage] - Entering  password
-2022-06-15 16:02:12.411 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.LoginPage] - Clicking the sing in button
-2022-06-15 16:02:14.026 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Open address page by URL
-2022-06-15 16:02:15.875 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Entering a name
-2022-06-15 16:02:16.336 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Entering a last name
-2022-06-15 16:02:16.489 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Entering an address
-2022-06-15 16:02:16.639 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Entering a zip code
-2022-06-15 16:02:16.989 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Entering a name of the city
-2022-06-15 16:02:17.167 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Choosing a country
-2022-06-15 16:02:17.814 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Entering a home phone
-2022-06-15 16:02:17.989 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Choosing a state
-2022-06-15 16:02:18.292 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Entering a title of address
-2022-06-15 16:02:18.455 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Clicking on the save button
-2022-06-15 16:02:19.951 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Getting a text of name of address
-======================================== FINISHED TEST createAddressTest Duration: 10s ========================================
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 31367
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-июн 15, 2022 4:02:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="deleteAddressTest" classname="org.tms.test.AddressPageTest" time="4.365">
-    <system-out><![CDATA[======================================== FINISHED TEST createAddressTest Duration: 10s ========================================
-======================================== FINISHED TEST createAddressTest Duration: 10s ========================================
-======================================== FINISHED TEST createAddressTest Duration: 10s ========================================
-======================================== FINISHED TEST createAddressTest Duration: 10s ========================================
-======================================== FINISHED TEST createAddressTest Duration: 10s ========================================
-======================================== FINISHED TEST createAddressTest Duration: 10s ========================================
-======================================== STARTING TEST deleteAddressTest ========================================
-======================================== STARTING TEST deleteAddressTest ========================================
-======================================== STARTING TEST deleteAddressTest ========================================
-======================================== STARTING TEST deleteAddressTest ========================================
-======================================== STARTING TEST deleteAddressTest ========================================
-======================================== STARTING TEST deleteAddressTest ========================================
-======================================== STARTING TEST deleteAddressTest ========================================
-2022-06-15 16:02:20.057 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Open address page by URL
-2022-06-15 16:02:21.026 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Clicking on the delete address button
-2022-06-15 16:02:21.649 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Getting text from the button (for assert)
-2022-06-15 16:02:22.938 INFO [TestNG-test=AddressPageTest-1] [org.tms.page.AddressPage] - Clicking on the logout button
-======================================== FINISHED TEST deleteAddressTest Duration: 4s ========================================
-]]></system-out>
-  </testcase>
-  <testcase name="createAddressFalseTest" classname="org.tms.test.AddressPageFalseTest" time="23.615">
-    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h3[@class=&apos;page-subheading&apos;]&apos; (tried for 15 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h3[@class='page-subheading']' (tried for 15 second(s) with 500 milliseconds interval)
-	at org.tms.test.AddressPageFalseTest.createAddressFalseTest(AddressPageFalseTest.java:18)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//h3[@class='page-subheading']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55188}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 07c3a4afd5576088d1cbf34dbcc2fc56
-*** Element info: {Using=xpath, value=//h3[@class='page-subheading']}
-	at org.tms.test.AddressPageFalseTest.createAddressFalseTest(AddressPageFalseTest.java:18)
-]]></failure>
-    <system-out><![CDATA[======================================== FINISHED TEST deleteAddressTest Duration: 4s ========================================
-======================================== FINISHED TEST deleteAddressTest Duration: 4s ========================================
-======================================== FINISHED TEST deleteAddressTest Duration: 4s ========================================
-======================================== FINISHED TEST deleteAddressTest Duration: 4s ========================================
-======================================== FINISHED TEST deleteAddressTest Duration: 4s ========================================
-======================================== FINISHED TEST deleteAddressTest Duration: 4s ========================================
-======================================== STARTING TEST createAddressFalseTest ========================================
-======================================== STARTING TEST createAddressFalseTest ========================================
-======================================== STARTING TEST createAddressFalseTest ========================================
-======================================== STARTING TEST createAddressFalseTest ========================================
-======================================== STARTING TEST createAddressFalseTest ========================================
-======================================== STARTING TEST createAddressFalseTest ========================================
-2022-06-15 16:02:36.454 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.LoginPage] - Opening page by URL
-2022-06-15 16:02:38.088 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.LoginPage] - Entering email address
-2022-06-15 16:02:38.401 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.LoginPage] - Entering  password
-2022-06-15 16:02:38.576 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.LoginPage] - Clicking the sing in button
-2022-06-15 16:02:39.734 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.AddressPage] - Open address page by URL
-2022-06-15 16:02:40.827 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.AddressPage] - Entering a name
-2022-06-15 16:02:40.994 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.AddressPage] - Entering a last name
-2022-06-15 16:02:41.201 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.AddressPage] - Entering an address
-2022-06-15 16:02:41.356 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.AddressPage] - Entering a zip code false
-2022-06-15 16:02:41.562 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.AddressPage] - Entering a name of the city
-2022-06-15 16:02:41.742 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.AddressPage] - Choosing a country
-2022-06-15 16:02:42.078 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.AddressPage] - Entering a home phone
-2022-06-15 16:02:42.253 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.AddressPage] - Choosing a state
-2022-06-15 16:02:42.507 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.AddressPage] - Clicking on the save button
-2022-06-15 16:02:43.738 INFO [TestNG-test=AddressPageFalseTest-1] [org.tms.page.AddressPage] - Getting a text modify Address
-======================================== FAILED TEST createAddressFalseTest Duration: 22s ========================================
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 18978
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-июн 15, 2022 4:02:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="changeTheLanguageOnTheWebsiteTest" classname="org.tms.test.ChangeLanguagePageTest" time="7.688">
-    <system-out><![CDATA[======================================== FAILED TEST createAddressFalseTest Duration: 22s ========================================
-======================================== FAILED TEST createAddressFalseTest Duration: 22s ========================================
-======================================== FAILED TEST createAddressFalseTest Duration: 22s ========================================
-======================================== FAILED TEST createAddressFalseTest Duration: 22s ========================================
-======================================== FAILED TEST createAddressFalseTest Duration: 22s ========================================
-======================================== STARTING TEST changeTheLanguageOnTheWebsiteTest ========================================
-======================================== STARTING TEST changeTheLanguageOnTheWebsiteTest ========================================
-======================================== STARTING TEST changeTheLanguageOnTheWebsiteTest ========================================
-======================================== STARTING TEST changeTheLanguageOnTheWebsiteTest ========================================
-======================================== STARTING TEST changeTheLanguageOnTheWebsiteTest ========================================
-2022-06-15 16:03:17.295 INFO [TestNG-test=ChangeLanguagePageTest-1] [org.tms.page.LoginPage] - Opening page by URL
-2022-06-15 16:03:19.448 INFO [TestNG-test=ChangeLanguagePageTest-1] [org.tms.page.LoginPage] - Entering email address
-2022-06-15 16:03:19.672 INFO [TestNG-test=ChangeLanguagePageTest-1] [org.tms.page.LoginPage] - Entering  password
-2022-06-15 16:03:19.842 INFO [TestNG-test=ChangeLanguagePageTest-1] [org.tms.page.LoginPage] - Clicking the sing in button
-2022-06-15 16:03:21.395 INFO [TestNG-test=ChangeLanguagePageTest-1] [org.tms.page.MyAccountPage] - Clicking the language list
-2022-06-15 16:03:21.593 INFO [TestNG-test=ChangeLanguagePageTest-1] [org.tms.page.MyAccountPage] - Clicking on the language select
-2022-06-15 16:03:23.023 INFO [TestNG-test=ChangeLanguagePageTest-1] [org.tms.page.MyAccountPage] - Clicking button sign out
-2022-06-15 16:03:24.948 INFO [TestNG-test=ChangeLanguagePageTest-1] [org.tms.page.MyAccountPage] - Getting language received on the top line
-======================================== FINISHED TEST changeTheLanguageOnTheWebsiteTest Duration: 7s ========================================
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 37189
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-июн 15, 2022 4:03:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="changeTheLanguageOnTheWebsiteTest" classname="org.tms.test.ChangeCurrencyPageTest" time="6.839">
-    <system-out><![CDATA[======================================== FINISHED TEST changeTheLanguageOnTheWebsiteTest Duration: 7s ========================================
-======================================== FINISHED TEST changeTheLanguageOnTheWebsiteTest Duration: 7s ========================================
-======================================== FINISHED TEST changeTheLanguageOnTheWebsiteTest Duration: 7s ========================================
-======================================== FINISHED TEST changeTheLanguageOnTheWebsiteTest Duration: 7s ========================================
-======================================== STARTING TEST changeTheLanguageOnTheWebsiteTest ========================================
-======================================== STARTING TEST changeTheLanguageOnTheWebsiteTest ========================================
-======================================== STARTING TEST changeTheLanguageOnTheWebsiteTest ========================================
-======================================== STARTING TEST changeTheLanguageOnTheWebsiteTest ========================================
-2022-06-15 16:03:34.238 INFO [TestNG-test=ChangeCurrencyPageTest-1] [org.tms.page.LoginPage] - Opening page by URL
-2022-06-15 16:03:35.665 INFO [TestNG-test=ChangeCurrencyPageTest-1] [org.tms.page.LoginPage] - Entering email address
-2022-06-15 16:03:35.888 INFO [TestNG-test=ChangeCurrencyPageTest-1] [org.tms.page.LoginPage] - Entering  password
-2022-06-15 16:03:36.106 INFO [TestNG-test=ChangeCurrencyPageTest-1] [org.tms.page.LoginPage] - Clicking the sing in button
-2022-06-15 16:03:37.388 INFO [TestNG-test=ChangeCurrencyPageTest-1] [org.tms.page.MyAccountPage] - Clicking the currency list
-2022-06-15 16:03:37.463 INFO [TestNG-test=ChangeCurrencyPageTest-1] [org.tms.page.MyAccountPage] - Clicking on the currency select
-2022-06-15 16:03:38.402 INFO [TestNG-test=ChangeCurrencyPageTest-1] [org.tms.page.MyAccountPage] - Clicking button sign out
-2022-06-15 16:03:41.008 INFO [TestNG-test=ChangeCurrencyPageTest-1] [org.tms.page.MyAccountPage] - Getting currency received on the top line
-======================================== FINISHED TEST changeTheLanguageOnTheWebsiteTest Duration: 6s ========================================
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 27655
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-июн 15, 2022 4:03:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="addItemToCartTest" classname="org.tms.test.CartPageTest" time="30.437">
-    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: ////a[@rel=&apos;nofollow&apos;]//span[@class=&apos;ajax_cart_quantity&apos;]&apos; (tried for 15 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: ////a[@rel='nofollow']//span[@class='ajax_cart_quantity']' (tried for 15 second(s) with 500 milliseconds interval)
-	at org.tms.test.CartPageTest.addItemToCartTest(CartPageTest.java:21)
-Caused by: org.openqa.selenium.InvalidSelectorException: 
-invalid selector: Unable to locate an element with the xpath expression ////a[@rel='nofollow']//span[@class='ajax_cart_quantity'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '////a[@rel='nofollow']//span[@class='ajax_cart_quantity']' is not a valid XPath expression.
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55277}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d1da3e26f7c00bce55c2235aa17e88a
-*** Element info: {Using=xpath, value=////a[@rel='nofollow']//span[@class='ajax_cart_quantity']}
-	at org.tms.test.CartPageTest.addItemToCartTest(CartPageTest.java:21)
-]]></failure>
-    <system-out><![CDATA[======================================== FINISHED TEST changeTheLanguageOnTheWebsiteTest Duration: 6s ========================================
-======================================== FINISHED TEST changeTheLanguageOnTheWebsiteTest Duration: 6s ========================================
-======================================== FINISHED TEST changeTheLanguageOnTheWebsiteTest Duration: 6s ========================================
-======================================== STARTING TEST addItemToCartTest ========================================
-======================================== STARTING TEST addItemToCartTest ========================================
-======================================== STARTING TEST addItemToCartTest ========================================
-2022-06-15 16:03:57.065 INFO [TestNG-test=CartPageTest-1] [org.tms.page.LoginPage] - Opening page by URL
-2022-06-15 16:03:58.596 INFO [TestNG-test=CartPageTest-1] [org.tms.page.LoginPage] - Entering email address
-2022-06-15 16:03:58.840 INFO [TestNG-test=CartPageTest-1] [org.tms.page.LoginPage] - Entering  password
-2022-06-15 16:03:59.058 INFO [TestNG-test=CartPageTest-1] [org.tms.page.LoginPage] - Clicking the sing in button
-2022-06-15 16:04:00.256 INFO [TestNG-test=CartPageTest-1] [org.tms.page.MyAccountPage] - Clicking button title Women
-2022-06-15 16:04:02.231 INFO [TestNG-test=CartPageTest-1] [org.tms.page.WomenPage] - Clicking on the add to the cart button
-2022-06-15 16:04:10.793 INFO [TestNG-test=CartPageTest-1] [org.tms.page.WomenPage] - Clicking on the continue to shopping button
-2022-06-15 16:04:11.715 INFO [TestNG-test=CartPageTest-1] [org.tms.page.WomenPage] - Clicking on the cart button
-======================================== FAILED TEST addItemToCartTest Duration: 30s ========================================
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 6093
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-июн 15, 2022 4:03:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="checkoutOrderTest" classname="org.tms.test.CheckoutOrderPageTest" time="25.292">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;email&apos;]&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;WIN-L3KRA4BUOOR&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_333&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a0c8624b4c0929148e0e7ad3d18bca8d&#10;*** Element info: {Using=xpath, value=//input[@id=&apos;email&apos;]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='email']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a0c8624b4c0929148e0e7ad3d18bca8d
-*** Element info: {Using=xpath, value=//input[@id='email']}
-	at org.tms.test.CheckoutOrderPageTest.checkoutOrderTest(CheckoutOrderPageTest.java:22)
-]]></failure>
-    <system-out><![CDATA[======================================== FAILED TEST addItemToCartTest Duration: 30s ========================================
-======================================== FAILED TEST addItemToCartTest Duration: 30s ========================================
-======================================== STARTING TEST checkoutOrderTest ========================================
-======================================== STARTING TEST checkoutOrderTest ========================================
-2022-06-15 16:04:35.432 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.LoginPage] - Opening page by URL
-2022-06-15 16:04:37.357 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.LoginPage] - Entering email address
-2022-06-15 16:04:37.591 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.LoginPage] - Entering  password
-2022-06-15 16:04:37.843 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.LoginPage] - Clicking the sing in button
-2022-06-15 16:04:39.207 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.AddressPage] - Open address page by URL
-2022-06-15 16:04:42.945 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.AddressPage] - Entering a name
-2022-06-15 16:04:43.374 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.AddressPage] - Entering a last name
-2022-06-15 16:04:43.649 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.AddressPage] - Entering an address
-2022-06-15 16:04:43.805 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.AddressPage] - Entering a zip code
-2022-06-15 16:04:46.751 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.AddressPage] - Entering a name of the city
-2022-06-15 16:04:46.896 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.AddressPage] - Choosing a country
-2022-06-15 16:04:47.266 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.AddressPage] - Entering a home phone
-2022-06-15 16:04:47.546 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.AddressPage] - Choosing a state
-2022-06-15 16:04:48.131 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.AddressPage] - Entering a title of address
-2022-06-15 16:04:48.394 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.AddressPage] - Clicking on the save button
-2022-06-15 16:04:56.777 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.LoginPage] - Opening page by URL
-2022-06-15 16:05:00.387 INFO [TestNG-test=CheckoutOrderPageTest-1] [org.tms.page.LoginPage] - Entering email address
-======================================== FAILED TEST checkoutOrderTest Duration: 25s ========================================
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 5780
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-июн 15, 2022 4:04:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="loginSignOutTest" classname="org.tms.test.LoginSingOutTest" time="5.38">
-    <system-out><![CDATA[======================================== FAILED TEST checkoutOrderTest Duration: 25s ========================================
-======================================== STARTING TEST loginSignOutTest ========================================
-2022-06-15 16:05:06.355 INFO [TestNG-test=LoginSingOutTest-1] [org.tms.page.LoginPage] - Opening page by URL
-2022-06-15 16:05:08.515 INFO [TestNG-test=LoginSingOutTest-1] [org.tms.page.LoginPage] - Entering email address
-2022-06-15 16:05:08.719 INFO [TestNG-test=LoginSingOutTest-1] [org.tms.page.LoginPage] - Entering  password
-2022-06-15 16:05:08.891 INFO [TestNG-test=LoginSingOutTest-1] [org.tms.page.LoginPage] - Clicking the sing in button
-2022-06-15 16:05:10.111 INFO [TestNG-test=LoginSingOutTest-1] [org.tms.page.MyAccountPage] - Clicking button sign out
-2022-06-15 16:05:11.418 INFO [TestNG-test=LoginSingOutTest-1] [org.tms.page.LoginPage] - Getting name AuthenticationPage
-======================================== FINISHED TEST loginSignOutTest Duration: 5s ========================================
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 6390
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-июн 15, 2022 4:05:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+июн 15, 2022 7:21:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>

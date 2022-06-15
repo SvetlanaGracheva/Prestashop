@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Test_suite">
-              <span class="suite-name border-failed">Test suite</span>
+              <span class="suite-name border-passed">Test suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Test_suite">
-                    <span class="test-stats">9 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,31 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Test_suite" class="hide-methods failed suite-Test_suite"> (hide)</a> <!-- hide-methods failed suite-Test_suite -->
-                      <a href="#" panel-name="suite-Test_suite" class="show-methods failed suite-Test_suite"> (show)</a> <!-- show-methods failed suite-Test_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Test_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="org.tms.test.CartPageTest" hash-for-method="addItemToCartTest">addItemToCartTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="org.tms.test.CheckoutOrderPageTest" hash-for-method="checkoutOrderTest">checkoutOrderTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="org.tms.test.AddressPageFalseTest" hash-for-method="createAddressFalseTest">createAddressFalseTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Test_suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -126,32 +102,7 @@
                     <div class="method-list-content passed suite-Test_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="org.tms.test.ChangeLanguagePageTest" hash-for-method="changeTheLanguageOnTheWebsiteTest">changeTheLanguageOnTheWebsiteTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="org.tms.test.ChangeCurrencyPageTest" hash-for-method="changeTheLanguageOnTheWebsiteTest">changeTheLanguageOnTheWebsiteTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="org.tms.test.CreateAccountTest" hash-for-method="createAccountTest">createAccountTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="org.tms.test.AddressPageTest" hash-for-method="createAddressTest">createAddressTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="org.tms.test.AddressPageTest" hash-for-method="deleteAddressTest">deleteAddressTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite" title="org.tms.test.LoginSingOutTest" hash-for-method="loginSignOutTest">loginSignOutTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -171,233 +122,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_suite" class="panel Test_suite">
-          <div class="suite-Test_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.tms.test.AddressPageFalseTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createAddressFalseTest">
-                  </a> <!-- createAddressFalseTest -->
-                  <span class="method-name">createAddressFalseTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h3[@class=&apos;page-subheading&apos;]&apos; (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at org.tms.util.Waiter.waitVisibilityOfElement(Waiter.java:15)
-	at org.tms.page.AddressPage.getTextModifyAddress(AddressPage.java:129)
-	at org.tms.service.AddressPageService.getTitleOfAddressFalsePage_aroundBody12(AddressPageService.java:76)
-	at org.tms.service.AddressPageService$AjcClosure13.run(AddressPageService.java:1)
-	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:51)
-	at org.tms.service.AddressPageService.getTitleOfAddressFalsePage(AddressPageService.java:76)
-	at org.tms.test.AddressPageFalseTest.createAddressFalseTest(AddressPageFalseTest.java:18)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[@class=&apos;page-subheading&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WIN-L3KRA4BUOOR&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_333&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55188}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 07c3a4afd5576088d1cbf34dbcc2fc56
-*** Element info: {Using=xpath, value=//h3[@class=&apos;page-subheading&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 23 more
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_suite-class-failed -->
-          <div class="suite-Test_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.tms.test.CheckoutOrderPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkoutOrderTest">
-                  </a> <!-- checkoutOrderTest -->
-                  <span class="method-name">checkoutOrderTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;email&apos;]&quot;}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WIN-L3KRA4BUOOR&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_333&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a0c8624b4c0929148e0e7ad3d18bca8d
-*** Element info: {Using=xpath, value=//input[@id=&apos;email&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.clear(Unknown Source)
-	at org.tms.page.LoginPage.fillInEmailAddress(LoginPage.java:56)
-	at org.tms.service.LoginPageService.login(LoginPageService.java:18)
-	at org.tms.service.WomenPageService.addItemToCart_aroundBody0(WomenPageService.java:16)
-	at org.tms.service.WomenPageService$AjcClosure1.run(WomenPageService.java:1)
-	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:51)
-	at org.tms.service.WomenPageService.addItemToCart(WomenPageService.java:16)
-	at org.tms.service.CheckoutOrderPageService.order(CheckoutOrderPageService.java:13)
-	at org.tms.test.CheckoutOrderPageTest.checkoutOrderTest(CheckoutOrderPageTest.java:22)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_suite-class-failed -->
-          <div class="suite-Test_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.tms.test.CartPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addItemToCartTest">
-                  </a> <!-- addItemToCartTest -->
-                  <span class="method-name">addItemToCartTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: ////a[@rel=&apos;nofollow&apos;]//span[@class=&apos;ajax_cart_quantity&apos;]&apos; (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at org.tms.util.Waiter.waitVisibilityOfElement(Waiter.java:15)
-	at org.tms.page.WomenPage.clickToCartButton(WomenPage.java:45)
-	at org.tms.service.WomenPageService.addItemToCart_aroundBody0(WomenPageService.java:20)
-	at org.tms.service.WomenPageService$AjcClosure1.run(WomenPageService.java:1)
-	at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:51)
-	at org.tms.service.WomenPageService.addItemToCart(WomenPageService.java:16)
-	at org.tms.test.CartPageTest.addItemToCartTest(CartPageTest.java:21)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression ////a[@rel=&apos;nofollow&apos;]//span[@class=&apos;ajax_cart_quantity&apos;] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;////a[@rel=&apos;nofollow&apos;]//span[@class=&apos;ajax_cart_quantity&apos;]&apos; is not a valid XPath expression.
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WIN-L3KRA4BUOOR&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_333&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55277}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d1da3e26f7c00bce55c2235aa17e88a
-*** Element info: {Using=xpath, value=////a[@rel=&apos;nofollow&apos;]//span[@class=&apos;ajax_cart_quantity&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 23 more
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_suite-class-failed -->
-          <div class="suite-Test_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.tms.test.ChangeCurrencyPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="changeTheLanguageOnTheWebsiteTest">
-                  </a> <!-- changeTheLanguageOnTheWebsiteTest -->
-                  <span class="method-name">changeTheLanguageOnTheWebsiteTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_suite-class-passed -->
-          <div class="suite-Test_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.tms.test.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_suite-class-passed -->
-          <div class="suite-Test_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.tms.test.LoginSingOutTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginSignOutTest">
-                  </a> <!-- loginSignOutTest -->
-                  <span class="method-name">loginSignOutTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_suite-class-passed -->
-          <div class="suite-Test_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.tms.test.ChangeLanguagePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="changeTheLanguageOnTheWebsiteTest">
-                  </a> <!-- changeTheLanguageOnTheWebsiteTest -->
-                  <span class="method-name">changeTheLanguageOnTheWebsiteTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_suite-class-passed -->
           <div class="suite-Test_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -416,21 +140,14 @@ Session ID: 7d1da3e26f7c00bce55c2235aa17e88a
           <div class="suite-Test_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.tms.test.AddressPageTest</span>
+              <span class="class-name">org.tms.test.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createAddressTest">
-                  </a> <!-- createAddressTest -->
-                  <span class="method-name">createAddressTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteAddressTest">
-                  </a> <!-- deleteAddressTest -->
-                  <span class="method-name">deleteAddressTest</span>
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -455,41 +172,6 @@ Session ID: 7d1da3e26f7c00bce55c2235aa17e88a
       &lt;class name=&quot;org.tms.test.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LoginPageTest --&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;AddressPageTest&quot; parallel=&quot;classes&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;org.tms.test.AddressPageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- AddressPageTest --&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;AddressPageFalseTest&quot; parallel=&quot;classes&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;org.tms.test.AddressPageFalseTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- AddressPageFalseTest --&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;ChangeLanguagePageTest&quot; parallel=&quot;classes&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;org.tms.test.ChangeLanguagePageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ChangeLanguagePageTest --&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;ChangeCurrencyPageTest&quot; parallel=&quot;classes&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;org.tms.test.ChangeCurrencyPageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ChangeCurrencyPageTest --&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;CartPageTest&quot; parallel=&quot;classes&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;org.tms.test.CartPageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- CartPageTest --&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;CheckoutOrderPageTest&quot; parallel=&quot;classes&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;org.tms.test.CheckoutOrderPageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- CheckoutOrderPageTest --&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;LoginSingOutTest&quot; parallel=&quot;classes&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;org.tms.test.LoginSingOutTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LoginSingOutTest --&gt;
 &lt;/suite&gt; &lt;!-- Test suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -505,27 +187,6 @@ Session ID: 7d1da3e26f7c00bce55c2235aa17e88a
               </li>
               <li>
                 <span class="test-name">LoginPageTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">AddressPageTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">AddressPageFalseTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">ChangeLanguagePageTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">ChangeCurrencyPageTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">CartPageTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">CheckoutOrderPageTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">LoginSingOutTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -551,52 +212,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addItemToCartTest')
-data.setCell(0, 2, 'org.tms.test.CartPageTest')
-data.setCell(0, 3, 30149);
+data.setCell(0, 1, 'createAccountTest')
+data.setCell(0, 2, 'org.tms.test.CreateAccountTest')
+data.setCell(0, 3, 18373);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkoutOrderTest')
-data.setCell(1, 2, 'org.tms.test.CheckoutOrderPageTest')
-data.setCell(1, 3, 25005);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createAddressFalseTest')
-data.setCell(2, 2, 'org.tms.test.AddressPageFalseTest')
-data.setCell(2, 3, 22732);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createAddressTest')
-data.setCell(3, 2, 'org.tms.test.AddressPageTest')
-data.setCell(3, 3, 10109);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'createAccountTest')
-data.setCell(4, 2, 'org.tms.test.CreateAccountTest')
-data.setCell(4, 3, 9192);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'changeTheLanguageOnTheWebsiteTest')
-data.setCell(5, 2, 'org.tms.test.ChangeLanguagePageTest')
-data.setCell(5, 3, 7707);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'changeTheLanguageOnTheWebsiteTest')
-data.setCell(6, 2, 'org.tms.test.ChangeCurrencyPageTest')
-data.setCell(6, 3, 6843);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginSignOutTest')
-data.setCell(7, 2, 'org.tms.test.LoginSingOutTest')
-data.setCell(7, 3, 5443);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'deleteAddressTest')
-data.setCell(8, 2, 'org.tms.test.AddressPageTest')
-data.setCell(8, 3, 4369);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'loginTest')
-data.setCell(9, 2, 'org.tms.test.LoginPageTest')
-data.setCell(9, 3, 3577);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'org.tms.test.LoginPageTest')
+data.setCell(1, 3, 3841);
 window.suiteTableData['Test_suite']= { tableData: data, tableDiv: 'times-div-Test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Test_suite">
               </div> <!-- times-div-Test_suite -->
             </div> <!-- times-div -->
@@ -629,141 +258,26 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">createAccountTest</span>
-                <span class="method-start">89297 ms</span>
+                <span class="method-start">18516 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">99142 ms</span>
+                <span class="method-start">37255 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.tms.test.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">100745 ms</span>
+                <span class="method-start">38526 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">115096 ms</span>
+                <span class="method-start">53610 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">stopBrowser</span>
-                <span class="method-start">118675 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.tms.test.AddressPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">121759 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">createAddressTest</span>
-                <span class="method-start">132434 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">deleteAddressTest</span>
-                <span class="method-start">142552 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">146924 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.tms.test.AddressPageFalseTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">149526 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createAddressFalseTest</span>
-                <span class="method-start">158914 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">183966 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.tms.test.ChangeLanguagePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">185634 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">changeTheLanguageOnTheWebsiteTest</span>
-                <span class="method-start">199789 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">207498 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.tms.test.ChangeCurrencyPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">208890 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">changeTheLanguageOnTheWebsiteTest</span>
-                <span class="method-start">216720 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">223565 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.tms.test.CartPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">227785 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">addItemToCartTest</span>
-                <span class="method-start">239567 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">270707 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.tms.test.CheckoutOrderPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">272025 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">checkoutOrderTest</span>
-                <span class="method-start">277928 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">303466 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.tms.test.LoginSingOutTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">304153 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">loginSignOutTest</span>
-                <span class="method-start">308848 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">stopBrowser</span>
-                <span class="method-start">314294 ms</span>
+                <span class="method-start">57453 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
