@@ -5,14 +5,17 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.tms.page.CartPage;
 import org.tms.service.CartPageService;
+import org.tms.service.MyAccountService;
 import org.tms.service.WomenPageService;
 
-public class WomenPageChangeParametersTest extends BaseTest {
+public class ChangeLanguagePageTest extends BaseTest {
 
 
    WomenPageService womenPageService;
    CartPageService cartPageService;
    CartPage cartPage;
+   MyAccountService myAccountService;
+
 
 
     @BeforeClass
@@ -20,21 +23,15 @@ public class WomenPageChangeParametersTest extends BaseTest {
             womenPageService= new WomenPageService();
             cartPageService= new CartPageService();
             cartPage= new CartPage();
+            myAccountService=new MyAccountService();
 
     }
 
-    @Test
-   public void  changeTheCurrencyOnTheWebsiteTest(){
-      womenPageService.changeTheCurrencyOnTheWebsite();
-       String actualCurrencyName = womenPageService.getTitleCurrencyOnTheSite();
-       String expectedCurrencyName= "EUR";
-       Assert.assertEquals(actualCurrencyName,expectedCurrencyName,"The currency on the page is incorrect");
 
-    }
     @Test
     public void changeTheLanguageOnTheWebsiteTest(){
-        womenPageService.changeTheLanguageOnTheWebsite();
-        String actualLanguageName= womenPageService.getTextLanguageOnTheSite();
+        myAccountService.changeTheLanguageOnTheWebsite();
+        String actualLanguageName= myAccountService.getTextLanguageOnTheSite();
         String expectedLanguageName= "Українська";
         Assert.assertEquals(actualLanguageName,expectedLanguageName,"The language on the page is incorrect");
 

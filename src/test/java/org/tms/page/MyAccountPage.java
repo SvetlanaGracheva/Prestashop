@@ -27,6 +27,24 @@ public class MyAccountPage extends Page {
     @FindBy(xpath = "//div[@class='header_user_info']//a[@class='logout']")
     private WebElement signOutButton;
 
+    @FindBy(xpath = "//div[@id='languages-block-top']")
+    private WebElement languageListButton;
+
+    @FindBy(xpath = "//span[contains(text(), 'Українська')]")
+    private WebElement languageSelectionButton; //выбор язвка
+
+    @FindBy(xpath = " //div[@class='current']//span[contains(text(), 'Українська')]")
+    private WebElement languageOnTheSite;
+
+    @FindBy(xpath = "//span[contains(text(), 'Валюта :')]")
+    private WebElement currencyListButton;
+
+    @FindBy(xpath = "//a[contains(text(), 'Евро')]")
+    private WebElement currencySelectionButton; //выбор валюты
+
+    @FindBy(xpath = "//strong[contains(text(), 'EUR')]")
+    private WebElement currencyOnTheSite;
+
     public String getTextPageNameAccount()
     {
         log.info("Getting the page name");
@@ -51,6 +69,38 @@ public class MyAccountPage extends Page {
                 log.info("Clicking button sign out");
         Waiter.waitVisibilityOfElement(driver, signOutButton);
         signOutButton.click();
+    }
+    public void clickLanguageListButton() {
+        log.info("Clicking the language list");
+        languageListButton.click();
+    }
+
+    public void clickLanguageSelection() {
+        log.info("Clicking on the language select");
+        Waiter.waitVisibilityOfElement(driver, languageSelectionButton);
+        languageSelectionButton.click();
+    }
+
+    public String getTextLanguageOnTheSite() {
+        log.info("Getting language received on the top line");
+        return languageOnTheSite.getText();
+    }
+
+    public void clickCurrencyListButton() {
+        log.info("Clicking the currency list");
+        currencyListButton.click();// клик список валюты
+    }
+
+    public void clickCurrencySelectionButton() {
+        log.info("Clicking on the currency select");
+        Waiter.waitVisibilityOfElement(driver, currencySelectionButton);
+        currencySelectionButton.click(); //валюта
+    }
+
+
+    public String getTextCurrencyOnTheSite() {
+        log.info("Getting currency received on the top line");
+        return currencyOnTheSite.getText();
     }
 
 }

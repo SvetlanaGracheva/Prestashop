@@ -21,9 +21,14 @@
             <class name="org.tms.test.AddressPageFalseTest"/>
         </classes>
     </test>
-    <test name="WomenPageChangeParametersTest">
+    <test name="ChangeLanguagePageTest">
         <classes>
-            <class name="org.tms.test.WomenPageChangeParametersTest"/>
+            <class name="org.tms.test.ChangeLanguagePageTest" />
+        </classes>
+    </test>
+    <test name="ChangeCurrencyPageTest">
+        <classes>
+            <class name="org.tms.test.ChangeCurrencyPageTest" />
         </classes>
     </test>
     <test name="CartPageTest">
@@ -37,9 +42,9 @@
         </classes>
     </test>
     <test name="LoginSingOutTest">
-    <classes>
-    <class name="org.tms.test.LoginSingOutTest"/>
-    </classes>
+        <classes>
+            <class name="org.tms.test.LoginSingOutTest"/>
+        </classes>
     </test>
 
 </suite>

@@ -28,60 +28,6 @@ public class WomenPage extends Page {
     @FindBy(xpath = " //a[@title='Printed Dress']//ancestor::div[@class='right-block']//span[@itemprop='price']")
     private WebElement priceOfItem;
 
-
-    @FindBy(xpath = "//span[contains(text(), 'Валюта :')]")
-    private WebElement currencyListButton;
-
-    @FindBy(xpath = "//a[contains(text(), 'Евро')]")
-    private WebElement currencySelectionButton; //выбор валюты
-
-     @FindBy(xpath = "//strong[contains(text(), 'EUR')]")
-    private WebElement currencyOnTheSite;
-
-    @FindBy(xpath = "//div[@id='languages-block-top']")
-    private WebElement languageListButton;
-
-    @FindBy(xpath = "//span[contains(text(), 'Українська')]")
-    private WebElement languageSelectionButton; //выбор язвка
-
-    @FindBy(xpath = " //div[@class='current']//span[contains(text(), 'Українська')]")
-    private WebElement languageOnTheSite;
-
-
-
-    public void clickCurrencyListButton() {
-        log.info("Clicking the currency list");
-        currencyListButton.click();// клик список валюты
-    }
-
-    public void clickCurrencySelectionButton() {
-        log.info("Clicking on the currency select");
-        Waiter.waitVisibilityOfElement(driver, currencySelectionButton);
-        currencySelectionButton.click(); //валюта
-    }
-
-
-    public String getTextCurrencyOnTheSite() {
-        log.info("Getting currency received on the top line");
-        return currencyOnTheSite.getText();
-    }
-
-    public void clickLanguageListButton() {
-        log.info("Clicking the language list");
-        languageListButton.click();
-    }
-
-    public void clickLanguageSelection() {
-        log.info("Clicking on the language select");
-        Waiter.waitVisibilityOfElement(driver, languageSelectionButton);
-        languageSelectionButton.click();
-    }
-
-    public String getTextLanguageOnTheSite() {
-        log.info("Getting language received on the top line");
-        return languageOnTheSite.getText();
-    }
-
     public void clickToAddToCartButton() {
         log.info("Clicking on the add to the cart button");
         Waiter.waitVisibilityOfElement(driver, addToCartButton);
