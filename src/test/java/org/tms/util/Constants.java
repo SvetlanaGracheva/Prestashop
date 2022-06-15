@@ -2,9 +2,9 @@ package org.tms.util;
 
 public class Constants {
     public static final String LOGIN_PAGE_URL = "http://prestashop.qatestlab.com.ua/ru/authentication?back=my-account";
-    public static final String EMAIL = "qwert12@mailto.plus";
+    public static final String EMAIL = "qwetrty@mailto.plus";
     public static final String PASSWORD = "qwe123";
-    public static final String EMAIL_CREATE = "qwert12@mailto.plus";
+    public static final String EMAIL_CREATE = "qwetrty@mailto.plus";
     public static final String EXPECTED_TEXT_OF_NAME_OF_MY_ACCOUNT_PAGE = "Welcome to your account. Here you can manage all of your personal information and orders.";
     public static final String EXPECTED_TEXT_AUTHENTICATION_FAILED= "There is 1 error";
     public static final String FIRST_NAME= "Ivanov";
