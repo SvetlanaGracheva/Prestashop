@@ -11,7 +11,7 @@ public class Constants {
     public static final String LAST_NAME ="Ivan";
     public static final String PASSWORD_CREATE = "qwert12345";
     public static final String PAGE_URL_ADDRESS ="http://prestashop.qatestlab.com.ua/ru/addresses";
-    public static final String EXPECTED_MESSAGE_OF_CHECKOUT_PAGE ="Ваш заказ http://prestashop.qatestlab.com.ua/ выполнен.";
+    public static final String EXPECTED_MESSAGE_OF_CHECKOUT_PAGE ="Ваш заказ http://prestashop.qatestlab.com.ua/ ";
 
 
 }
