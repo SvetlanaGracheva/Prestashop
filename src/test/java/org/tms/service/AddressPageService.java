@@ -5,6 +5,7 @@ import org.tms.driver.DriverSingleton;
 import org.tms.page.AddressPage;
 import org.openqa.selenium.Alert;
 import org.tms.model.Address;
+
 import static org.tms.model.Address.ADDRESSES_PAGE_URL;
 import static org.tms.model.Address.ADDRESS_PAGE_URL;
 
@@ -55,25 +56,6 @@ public class AddressPageService {
         return addressPage.getText();
     }
 
-    @Step("Creating address False")
-    public void createYourAddressFalse() {
-        loginPageService.login();
-        Address address = new Address();
-        addressPage.openPage(ADDRESS_PAGE_URL)
-                .firstNameInput(address)
-                .lastNameInput(address)
-                .addressInput(address)
-                .zipFalseInput(address)
-                .cityInput(address)
-                .chooseACountry(address)
-                .homePhoneInput(address)
-                .chooseAState(address)
-                .clickSaveButton();
-    }
-    @Step(" Getting a text modify Address")
-    public String getTitleOfAddressFalsePage() {
 
-        return addressPage.getTextModifyAddress();
-    }
 }
 

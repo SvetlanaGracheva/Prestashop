@@ -17,7 +17,6 @@ public class MyAccountPage extends Page {
     @FindBy(xpath = "//p[contains(text(), 'Your account has been created.')]")
     private WebElement messageAccountCreate;
 
-
     @FindBy(xpath = "//a[@title='Women']")
     private WebElement pageTitleWomenButton;
 

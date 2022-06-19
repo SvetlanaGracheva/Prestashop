@@ -4,9 +4,12 @@ package org.tms.page;
 import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.tms.util.Waiter;
+
 @Log4j2
 
 public class CheckoutOrderPage extends Page {
+
     @FindBy(xpath = "//button[@name='processAddress']")
     private WebElement proceedCheckoutButton;
 
@@ -37,16 +40,19 @@ public class CheckoutOrderPage extends Page {
 
     public void clickOnProceedToCheckoutButtonAfterAgreementOfTermsOfServices() {
       log.info("Clicking on the proceed to checkout button after agreement of terms of delivery");
+        Waiter.waitVisibilityOfElement(driver,proceedToCheckoutButton);
        proceedToCheckoutButton.click();
     }
 
     public void clickOnBankTransferButton() {
       log.info("Choosing a bank transfer payment");
+        Waiter.waitVisibilityOfElement(driver,choosingPaymentMethodButton);
         choosingPaymentMethodButton.click();
     }
 
     public void clickOnOrderConfirmationButton() {
         log.info("Clicking on the order confirmation button");
+        Waiter.waitVisibilityOfElement(driver,orderConfirmationButton);
         orderConfirmationButton.click();
     }
 

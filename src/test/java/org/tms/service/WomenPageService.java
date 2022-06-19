@@ -6,10 +6,10 @@ import org.tms.page.MyAccountPage;
 import org.tms.page.WomenPage;
 
 public class WomenPageService {
-    WomenPage womenPage = new WomenPage();
-    LoginPageService loginPageService = new LoginPageService();
-    MyAccountPage myAccountPage = new MyAccountPage();
-    CartPage cartPage = new CartPage();
+    private WomenPage womenPage = new WomenPage();
+    private LoginPageService loginPageService = new LoginPageService();
+    private MyAccountPage myAccountPage = new MyAccountPage();
+    private CartPage cartPage = new CartPage();
 
     @Step("Add item to cart")
     public void addItemToCart() {
@@ -18,6 +18,13 @@ public class WomenPageService {
         womenPage.clickToAddToCartButton();
         womenPage.clickToContinueShoppingButton();
         womenPage.clickToCartButton();
+    }
+    @Step("Adding item to the cart")
+    public void addingItemToCart() {
+        myAccountPage.clickPageTitleWomen();
+        womenPage.clickToAddToCartButton();
+              womenPage .clickToContinueShoppingButton();
+                womenPage.clickToCartButton();
     }
 
     public String getTitleItemInTheCart() {

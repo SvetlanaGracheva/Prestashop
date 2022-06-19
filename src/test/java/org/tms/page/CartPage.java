@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 @Log4j2
 public class CartPage extends Page {
-    @FindBy(xpath = "//td[@class='cart_description']//*[contains(text(), 'Printed Dress')]")
+    @FindBy(xpath = "//td[@class='cart_description']//*[contains(text(), 'Faded Short Sleeve T-shirts')]")
     private WebElement ItemInTheCart; //  товар в корзине
 
     @FindBy(xpath = "//a[@id='3_13_0_0']")
@@ -32,6 +32,9 @@ public class CartPage extends Page {
 
     @FindBy(xpath = "//a[@title='Proceed to checkout']")
     private WebElement proceedToCheckoutButton;
+
+    @FindBy(xpath = "//h1[@class='page-heading']")
+    private WebElement textOfThePageAfterClickingOnLogoutButton;
 
     public String descriptionItemInTheCart() {
         log.info("GetTing the Product description In the Shopping Cart");
@@ -74,6 +77,15 @@ public class CartPage extends Page {
     public void clickOnProceedToCheckoutButton() {
         log.info("Clicking on the proceed to checkout button");
         proceedToCheckoutButton.click();
+    }
+    public void clickOnLoginButton() {
+        log.info("Clicking on login button");
+        loginButton.click();
+    }
+
+    public String getTextOfThePageAfterClickingOnLogoutButton() {
+        log.info("Getting text of the page after clicking on logout button");
+        return textOfThePageAfterClickingOnLogoutButton.getText();
     }
 
 }

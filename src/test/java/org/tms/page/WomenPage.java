@@ -11,8 +11,6 @@ import org.tms.util.Waiter;
 
 @Log4j2
 public class WomenPage extends Page {
-    WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 10);
-
     @FindBy(xpath = "//div[@class='button-container']//a[@data-id-product='1']")
     private WebElement addToCartButton;
 
@@ -22,27 +20,37 @@ public class WomenPage extends Page {
     @FindBy(xpath = "//span[@class='continue btn btn-default button exclusive-medium']")
     private WebElement continueShoppingButton;
 
-    @FindBy(xpath = "////a[@rel='nofollow']//span[@class='ajax_cart_quantity']")
+    @FindBy(xpath = "//span[@class='ajax_cart_quantity unvisible']//ancestor::a")
     private WebElement cartButton;
 
-    @FindBy(xpath = " //a[@title='Printed Dress']//ancestor::div[@class='right-block']//span[@itemprop='price']")
+    @FindBy(xpath = " //a[@title='Faded Short Sleeve T-shirts']//ancestor::div[@class='right-block']//span[@itemprop='price']")
     private WebElement priceOfItem;
 
-    public void clickToAddToCartButton() {
+    @FindBy(xpath = "//a[@data-id-product='1']//parent::div[@class='button-container']//a[@title='View']")
+    private WebElement moreInformationAboutItemButton;
+
+    @FindBy(xpath = "//div[@class='right-block']")
+    private WebElement object;
+
+    @FindBy(xpath = "//div[@id='short_description_content']//p")
+    private WebElement descriptionOfItem;
+
+    public WomenPage clickToAddToCartButton() {
         log.info("Clicking on the add to the cart button");
-        Waiter.waitVisibilityOfElement(driver, addToCartButton);
-        addToCartButton.click();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).moveToElement(addToCartButton).click().build().perform();
+        return this;
     }
 
-    public void clickToContinueShoppingButton() {
+    public WomenPage clickToContinueShoppingButton() {
         log.info("Clicking on the continue to shopping button");
-        wait.until(ExpectedConditions.visibilityOf(continueShoppingButton)).click();
+        Waiter.waitVisibilityOfElement(driver, continueShoppingButton);
         continueShoppingButton.click();
+        return this;
     }
 
     public void clickToCartButton() {
         log.info("Clicking on the cart button");
-        Waiter.waitVisibilityOfElement(driver, cartButton);
         cartButton.click();
     }
 
@@ -50,4 +58,16 @@ public class WomenPage extends Page {
         log.info("Getting price of item");
         return priceOfItem.getText();
     }
+
+    public void clickOnMoreInformationAboutItemButton() {
+        log.info("Clicking on the more information about item button");
+        Actions actions = new Actions(driver);
+        actions.moveToElement(object).moveToElement(moreInformationAboutItemButton).click().build().perform();
+    }
+
+    public String getTextOfDescriptionOfItem() {
+        log.info("Getting description of item");
+        return descriptionOfItem.getText();
+    }
+
 }

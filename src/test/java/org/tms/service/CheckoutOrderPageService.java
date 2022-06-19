@@ -1,29 +1,33 @@
 package org.tms.service;
 
+import io.qameta.allure.Step;
 import org.tms.page.CheckoutOrderPage;
 
 public class CheckoutOrderPageService {
-    WomenPageService womenPageService= new WomenPageService();
-    AddressPageService addressPageService=new AddressPageService();
-    CartPageService cartPageService= new CartPageService();
-    CheckoutOrderPage checkoutOrderPage= new CheckoutOrderPage();
+    private WomenPageService womenPageService = new WomenPageService();
+    private AddressPageService addressPageService = new AddressPageService();
+    private CartPageService cartPageService = new CartPageService();
+    private CheckoutOrderPage checkoutOrderPage = new CheckoutOrderPage();
 
-    public void order(){
+    @Step("Making order")
+    public void ordering() {
         addressPageService.createYourAddress();
-        womenPageService.addItemToCart();
-        cartPageService.clickOnLogoutButton();
+        womenPageService.addingItemToCart();
+        cartPageService.clickOnProceedToCheckoutButton();
         checkoutOrderPage.clickOnProceedToCheckoutButton();
         checkoutOrderPage.choosingTheTypeOfDelivery();
         checkoutOrderPage.clickOnProceedToCheckoutButtonAfterAgreementOfTermsOfServices();
         checkoutOrderPage.clickOnBankTransferButton();
         checkoutOrderPage.clickOnOrderConfirmationButton();
-
     }
-    public String getTextOfOderConfirmationMessage (){
+
+    @Step("Getting text of order4 confirmation message")
+    public String getTextOfOrderConfirmationMessage() {
         return checkoutOrderPage.getTextOfOrderConfirmationMessage();
     }
-    public void deleteAddress ()
-    {addressPageService.deleteAddress();
+
+    @Step("Deleting address")
+    public void deleteAddress() {
+        addressPageService.deleteAddress();
     }
 }
-

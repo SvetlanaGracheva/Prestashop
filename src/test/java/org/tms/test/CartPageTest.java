@@ -6,13 +6,14 @@ import org.testng.annotations.Test;
 import org.tms.service.CartPageService;
 import org.tms.service.WomenPageService;
 
-public class CartPageTest extends BaseTest{
+public class CartPageTest extends BaseTest {
+
     private WomenPageService womenPageService;
     private CartPageService cartPageService;
 
     @BeforeClass
     public void setUp() {
-        womenPageService= new WomenPageService();
+        womenPageService = new WomenPageService();
         cartPageService = new CartPageService();
     }
 
@@ -25,4 +26,13 @@ public class CartPageTest extends BaseTest{
         Assert.assertTrue(actualNameOfItemItTheCart.contains(expectedNameOfItemItTheCart), "The actual name of item in the cart does not match expected!");
     }
 
+   @Test
+   public void deleteItemFromCartTest() {
+        womenPageService.addItemToCart();
+       cartPageService.deleteItemFromCart();
+       String actualCountOfItemsInTheCart = cartPageService.getCountOfItemsInTheCart();
+        String expectedCountOfItemsInTheCart = "1 product";
+       Assert.assertEquals(actualCountOfItemsInTheCart, expectedCountOfItemsInTheCart, "The actual count of item in the cart does not match expected!");
+   }
 }
+

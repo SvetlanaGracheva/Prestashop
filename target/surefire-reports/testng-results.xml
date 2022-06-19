@@ -1,41 +1,377 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="3" ignored="0" total="9" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Test suite" duration-ms="60580" started-at="2022-06-15T19:20:42 EEST" finished-at="2022-06-15T19:21:43 EEST">
+  <suite name="Surefire suite" duration-ms="170382" started-at="2022-06-19T17:34:27 EEST" finished-at="2022-06-19T17:37:17 EEST">
     <groups>
     </groups>
-    <test name="CreateAccountTest" duration-ms="38277" started-at="2022-06-15T19:20:42 EEST" finished-at="2022-06-15T19:21:20 EEST">
-      <class name="org.tms.test.CreateAccountTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.CreateAccountTest@60094a13]" name="setUp" is-config="true" duration-ms="18444" started-at="2022-06-15T19:20:42 EEST" finished-at="2022-06-15T19:21:01 EEST">
+    <test name="Surefire test" duration-ms="170382" started-at="2022-06-19T17:34:27 EEST" finished-at="2022-06-19T17:37:17 EEST">
+      <class name="org.tms.test.LoginSingOutTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.LoginSingOutTest@37cd92d6]" name="setUp" is-config="true" duration-ms="2642" started-at="2022-06-19T17:37:09 EEST" finished-at="2022-06-19T17:37:12 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createAccountTest()[pri:0, instance:org.tms.test.CreateAccountTest@60094a13]" name="createAccountTest" duration-ms="18373" started-at="2022-06-15T19:21:01 EEST" finished-at="2022-06-15T19:21:19 EEST">
+        <test-method status="PASS" signature="loginSignOutTest()[pri:0, instance:org.tms.test.LoginSingOutTest@37cd92d6]" name="loginSignOutTest" duration-ms="4148" started-at="2022-06-19T17:37:12 EEST" finished-at="2022-06-19T17:37:16 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSignOutTest -->
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.LoginSingOutTest@37cd92d6]" name="stopBrowser" is-config="true" duration-ms="775" started-at="2022-06-19T17:37:16 EEST" finished-at="2022-06-19T17:37:17 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- org.tms.test.LoginSingOutTest -->
+      <class name="org.tms.test.ChangeLanguagePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.ChangeLanguagePageTest@70925b45]" name="setUp" is-config="true" duration-ms="3588" started-at="2022-06-19T17:36:05 EEST" finished-at="2022-06-19T17:36:09 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="changeTheLanguageOnTheWebsiteTest()[pri:0, instance:org.tms.test.ChangeLanguagePageTest@70925b45]" name="changeTheLanguageOnTheWebsiteTest" duration-ms="5982" started-at="2022-06-19T17:36:09 EEST" finished-at="2022-06-19T17:36:15 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeTheLanguageOnTheWebsiteTest -->
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.ChangeLanguagePageTest@70925b45]" name="stopBrowser" is-config="true" duration-ms="868" started-at="2022-06-19T17:36:15 EEST" finished-at="2022-06-19T17:36:16 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- org.tms.test.ChangeLanguagePageTest -->
+      <class name="org.tms.test.CreateAccountTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.CreateAccountTest@aa22f1c]" name="setUp" is-config="true" duration-ms="5422" started-at="2022-06-19T17:36:33 EEST" finished-at="2022-06-19T17:36:39 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="createAccountTest()[pri:0, instance:org.tms.test.CreateAccountTest@aa22f1c]" name="createAccountTest" duration-ms="22306" started-at="2022-06-19T17:36:39 EEST" finished-at="2022-06-19T17:37:01 EEST">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='id_gender2']' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='id_gender2']' (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at org.tms.page.CreateAccountPage.clickTitle(CreateAccountPage.java:30)
+at org.tms.service.CreateAccountService.createNewAccount(CreateAccountService.java:22)
+at org.tms.test.CreateAccountTest.createAccountTest(CreateAccountTest.java:20)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='id_gender2']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ffec66d8b46248e498212be3bd444e89
+*** Element info: {Using=xpath, value=//input[@id='id_gender2']}
+at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccountTest -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.CreateAccountTest@60094a13]" name="stopBrowser" is-config="true" duration-ms="950" started-at="2022-06-15T19:21:19 EEST" finished-at="2022-06-15T19:21:20 EEST">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.CreateAccountTest@aa22f1c]" name="stopBrowser" is-config="true" duration-ms="1554" started-at="2022-06-19T17:37:01 EEST" finished-at="2022-06-19T17:37:03 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- org.tms.test.CreateAccountTest -->
-    </test> <!-- CreateAccountTest -->
-    <test name="LoginPageTest" duration-ms="21985" started-at="2022-06-15T19:21:21 EEST" finished-at="2022-06-15T19:21:43 EEST">
       <class name="org.tms.test.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.LoginPageTest@35038141]" name="setUp" is-config="true" duration-ms="15083" started-at="2022-06-15T19:21:21 EEST" finished-at="2022-06-15T19:21:36 EEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.LoginPageTest@55e7a35c]" name="setUp" is-config="true" duration-ms="2615" started-at="2022-06-19T17:37:03 EEST" finished-at="2022-06-19T17:37:06 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:org.tms.test.LoginPageTest@35038141]" name="loginTest" duration-ms="3841" started-at="2022-06-15T19:21:36 EEST" finished-at="2022-06-15T19:21:40 EEST">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:org.tms.test.LoginPageTest@55e7a35c]" name="loginTest" duration-ms="3190" started-at="2022-06-19T17:37:06 EEST" finished-at="2022-06-19T17:37:09 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.LoginPageTest@35038141]" name="stopBrowser" is-config="true" duration-ms="3039" started-at="2022-06-15T19:21:40 EEST" finished-at="2022-06-15T19:21:43 EEST">
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.LoginPageTest@55e7a35c]" name="stopBrowser" is-config="true" duration-ms="692" started-at="2022-06-19T17:37:09 EEST" finished-at="2022-06-19T17:37:09 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->
       </class> <!-- org.tms.test.LoginPageTest -->
-    </test> <!-- LoginPageTest -->
-  </suite> <!-- Test suite -->
+      <class name="org.tms.test.CartPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.CartPageTest@733c423e]" name="setUp" is-config="true" duration-ms="7468" started-at="2022-06-19T17:35:28 EEST" finished-at="2022-06-19T17:35:35 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addItemToCartTest()[pri:0, instance:org.tms.test.CartPageTest@733c423e]" name="addItemToCartTest" duration-ms="9137" started-at="2022-06-19T17:35:35 EEST" finished-at="2022-06-19T17:35:45 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToCartTest -->
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.CartPageTest@733c423e]" name="stopBrowser" is-config="true" duration-ms="692" started-at="2022-06-19T17:35:45 EEST" finished-at="2022-06-19T17:35:45 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- org.tms.test.CartPageTest -->
+      <class name="org.tms.test.ChangeCurrencyPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.ChangeCurrencyPageTest@4b629f13]" name="setUp" is-config="true" duration-ms="12779" started-at="2022-06-19T17:35:45 EEST" finished-at="2022-06-19T17:35:58 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="changeTheLanguageOnTheWebsiteTest()[pri:0, instance:org.tms.test.ChangeCurrencyPageTest@4b629f13]" name="changeTheLanguageOnTheWebsiteTest" duration-ms="5906" started-at="2022-06-19T17:35:58 EEST" finished-at="2022-06-19T17:36:04 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeTheLanguageOnTheWebsiteTest -->
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.ChangeCurrencyPageTest@4b629f13]" name="stopBrowser" is-config="true" duration-ms="1136" started-at="2022-06-19T17:36:04 EEST" finished-at="2022-06-19T17:36:05 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- org.tms.test.ChangeCurrencyPageTest -->
+      <class name="org.tms.test.CheckoutOrderPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.CheckoutOrderPageTest@1b9ea3e3]" name="setUp" is-config="true" duration-ms="3858" started-at="2022-06-19T17:36:16 EEST" finished-at="2022-06-19T17:36:19 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="checkoutOrderTest()[pri:0, instance:org.tms.test.CheckoutOrderPageTest@1b9ea3e3]" name="checkoutOrderTest" duration-ms="12619" started-at="2022-06-19T17:36:19 EEST" finished-at="2022-06-19T17:36:32 EEST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@name='processCarrier']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51821}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe808ef0aa9475540f6336b50cd6616c
+*** Element info: {Using=xpath, value=//button[@name='processCarrier']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@name='processCarrier']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51821}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe808ef0aa9475540f6336b50cd6616c
+*** Element info: {Using=xpath, value=//button[@name='processCarrier']}
+at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy27.click(Unknown Source)
+at org.tms.page.CheckoutOrderPage.clickOnProceedToCheckoutButton(CheckoutOrderPage.java:31)
+at org.tms.service.CheckoutOrderPageService.ordering_aroundBody0(CheckoutOrderPageService.java:17)
+at org.tms.service.CheckoutOrderPageService$AjcClosure1.run(CheckoutOrderPageService.java:1)
+at org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)
+at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:51)
+at org.tms.service.CheckoutOrderPageService.ordering(CheckoutOrderPageService.java:14)
+at org.tms.test.CheckoutOrderPageTest.checkoutOrderTest(CheckoutOrderPageTest.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutOrderTest -->
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.CheckoutOrderPageTest@1b9ea3e3]" name="stopBrowser" is-config="true" duration-ms="805" started-at="2022-06-19T17:36:32 EEST" finished-at="2022-06-19T17:36:33 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- org.tms.test.CheckoutOrderPageTest -->
+      <class name="org.tms.test.BaseTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.BaseTest@687a762c]" name="setUp" is-config="true" duration-ms="20198" started-at="2022-06-19T17:34:27 EEST" finished-at="2022-06-19T17:34:47 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- org.tms.test.BaseTest -->
+      <class name="org.tms.test.AddressPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.tms.test.AddressPageTest@1a2e2935]" name="setUp" is-config="true" duration-ms="8623" started-at="2022-06-19T17:34:47 EEST" finished-at="2022-06-19T17:34:56 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="createAddressTest()[pri:0, instance:org.tms.test.AddressPageTest@1a2e2935]" name="createAddressTest" duration-ms="26531" started-at="2022-06-19T17:34:56 EEST" finished-at="2022-06-19T17:35:22 EEST">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h3[@class='page-subheading']' (tried for 15 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h3[@class='page-subheading']' (tried for 15 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at org.tms.util.Waiter.waitVisibilityOfElement(Waiter.java:15)
+at org.tms.page.AddressPage.getTextOfNameOfAddress(AddressPage.java:107)
+at org.tms.service.AddressPageService.getTitleOfAddressPage_aroundBody4(AddressPageService.java:43)
+at org.tms.service.AddressPageService$AjcClosure5.run(AddressPageService.java:1)
+at org.aspectj.runtime.reflect.JoinPointImpl.proceed(JoinPointImpl.java:149)
+at io.qameta.allure.aspects.StepsAspects.step(StepsAspects.java:51)
+at org.tms.service.AddressPageService.getTitleOfAddressPage(AddressPageService.java:43)
+at org.tms.test.AddressPageTest.createAddressTest(AddressPageTest.java:20)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h3[@class='page-subheading']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN-L3KRA4BUOOR', ip: '192.168.0.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\BD18~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51695}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f9cb790b70cf605471ff736b90854d1
+*** Element info: {Using=xpath, value=//h3[@class='page-subheading']}
+at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 41 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAddressTest -->
+        <test-method status="PASS" signature="deleteAddressTest()[pri:0, instance:org.tms.test.AddressPageTest@1a2e2935]" name="deleteAddressTest" duration-ms="3594" started-at="2022-06-19T17:35:24 EEST" finished-at="2022-06-19T17:35:27 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAddressTest -->
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:org.tms.test.AddressPageTest@1a2e2935]" name="stopBrowser" is-config="true" duration-ms="871" started-at="2022-06-19T17:35:27 EEST" finished-at="2022-06-19T17:35:28 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- org.tms.test.AddressPageTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
