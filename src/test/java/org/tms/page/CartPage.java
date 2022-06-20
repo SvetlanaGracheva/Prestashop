@@ -3,6 +3,7 @@ package org.tms.page;
 import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.tms.util.Waiter;
 
 @Log4j2
 public class CartPage extends Page {
@@ -76,15 +77,18 @@ public class CartPage extends Page {
 
     public void clickOnProceedToCheckoutButton() {
         log.info("Clicking on the proceed to checkout button");
+        Waiter.waitVisibilityOfElement(driver,proceedToCheckoutButton);
         proceedToCheckoutButton.click();
     }
     public void clickOnLoginButton() {
         log.info("Clicking on login button");
+        Waiter.waitVisibilityOfElement(driver,loginButton);
         loginButton.click();
     }
 
     public String getTextOfThePageAfterClickingOnLogoutButton() {
         log.info("Getting text of the page after clicking on logout button");
+        Waiter.waitVisibilityOfElement(driver,textOfThePageAfterClickingOnLogoutButton);
         return textOfThePageAfterClickingOnLogoutButton.getText();
     }
 

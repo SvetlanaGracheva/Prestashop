@@ -58,6 +58,7 @@ public class CheckoutOrderPage extends Page {
 
     public String getTextOfOrderConfirmationMessage() {
       log.info("Getting a text of order confirmation message");
+        Waiter.waitVisibilityOfElement(driver,orderConfirmationMessage);
         return orderConfirmationMessage.getText();
     }
 
