@@ -29,16 +29,16 @@ public class MyAccountPage extends Page {
     @FindBy(xpath = "//div[@id='languages-block-top']")
     private WebElement languageListButton;
 
-    @FindBy(xpath = "//span[contains(text(), 'Українська')]")
+    @FindBy(xpath = "//ul[@id='first-languages']//li[@class='selected']")
     private WebElement languageSelectionButton; //выбор язвка
 
-    @FindBy(xpath = " //div[@class='current']//span[contains(text(), 'Українська')]")
+    @FindBy(xpath = " //div[@id='languages-block-top']")
     private WebElement languageOnTheSite;
 
-    @FindBy(xpath = "//span[contains(text(), 'Валюта :')]")
+    @FindBy(xpath = "//input[@id='id_currency']")
     private WebElement currencyListButton;
 
-    @FindBy(xpath = "//a[contains(text(), 'Евро')]")
+    @FindBy(xpath = "//a[@href='javascript:setCurrency(2);']")
     private WebElement currencySelectionButton; //выбор валюты
 
     @FindBy(xpath = "//strong[contains(text(), 'EUR')]")
