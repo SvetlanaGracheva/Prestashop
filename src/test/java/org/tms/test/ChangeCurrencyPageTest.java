@@ -31,7 +31,7 @@ public class ChangeCurrencyPageTest extends BaseTest{
     public void changeTheLanguageOnTheWebsiteTest(){
         myAccountService.changeTheCurrencyOnTheWebsite();
         String actualCurrencyName= myAccountService.getTitleCurrencyOnTheSite();
-        String expectedCurrencyName= "UAH";
+        String expectedCurrencyName= "EUR";
         Assert.assertEquals(actualCurrencyName,expectedCurrencyName,"The Currency on the page is incorrect");
 
     }

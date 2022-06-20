@@ -38,7 +38,7 @@ public class MyAccountPage extends Page {
     @FindBy(xpath = "//form[@id='setCurrency']")
     private WebElement currencyListButton;
 
-    @FindBy(xpath = "//a[@href='javascript:setCurrency(1);']")
+    @FindBy(xpath = "//a[@href='javascript:setCurrency(2);']")
     private WebElement currencySelectionButton; //выбор валюты
 
     @FindBy(xpath = "//strong[contains(text(), 'EUR')]")

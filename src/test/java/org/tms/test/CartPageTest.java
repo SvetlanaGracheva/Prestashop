@@ -31,7 +31,7 @@ public class CartPageTest extends BaseTest {
         womenPageService.addItemToCart();
        cartPageService.deleteItemFromCart();
        String actualCountOfItemsInTheCart = cartPageService.getCountOfItemsInTheCart();
-        String expectedCountOfItemsInTheCart = "1 product";
+        String expectedCountOfItemsInTheCart = "2 product";
        Assert.assertEquals(actualCountOfItemsInTheCart, expectedCountOfItemsInTheCart, "The actual count of item in the cart does not match expected!");
    }
 }

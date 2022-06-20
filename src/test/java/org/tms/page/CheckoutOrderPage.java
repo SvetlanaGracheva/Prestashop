@@ -13,7 +13,7 @@ public class CheckoutOrderPage extends Page {
     @FindBy(xpath = "//button[@name='processAddress']")
     private WebElement proceedCheckoutButton;
 
-    @FindBy(xpath = "//input[@id='cgv']")
+    @FindBy(xpath = "//div[@class='checker']")
     private WebElement consentCheckbox;
 
     @FindBy(xpath = "//button[@name='processCarrier']")
@@ -25,7 +25,7 @@ public class CheckoutOrderPage extends Page {
     @FindBy(xpath = "//button[@class='button btn btn-default button-medium']")
     private WebElement orderConfirmationButton;
 
-    @FindBy(xpath = "//p[@class='cheque-indent']")
+    @FindBy(xpath = "//h1[@class='page-heading']")
     private WebElement orderConfirmationMessage;
 
     public void clickOnProceedToCheckoutButton() {

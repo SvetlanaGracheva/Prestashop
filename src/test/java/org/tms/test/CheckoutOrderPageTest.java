@@ -21,7 +21,6 @@ public class CheckoutOrderPageTest extends BaseTest {
         checkoutOrderPadeService.ordering();
         String actualMessageOfCheckoutPage = checkoutOrderPadeService.getTextOfOrderConfirmationMessage();
         String expectedMessageOfCheckoutPage = "ORDER CONFIRMATION";
-        checkoutOrderPadeService.deleteAddress();
-        Assert.assertTrue(actualMessageOfCheckoutPage.contains(expectedMessageOfCheckoutPage), "The actual text of checkout page does not match expected!");
+        Assert.assertEquals(actualMessageOfCheckoutPage,expectedMessageOfCheckoutPage,"The actual text of checkout page does not match expected!");
     }
 }
