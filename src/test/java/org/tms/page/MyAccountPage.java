@@ -35,7 +35,7 @@ public class MyAccountPage extends Page {
     @FindBy(xpath = " //div[@class='languages-block']")
     private WebElement languageOnTheSite;
 
-    @FindBy(xpath = "//div[@class='current active']")
+    @FindBy(xpath = "//form[@id='setCurrency']")
     private WebElement currencyListButton;
 
     @FindBy(xpath = "//a[@href='javascript:setCurrency(1);']")

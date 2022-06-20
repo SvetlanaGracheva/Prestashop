@@ -10,7 +10,7 @@ public class CartPage extends Page {
     @FindBy(xpath = "//td[@class='cart_description']//*[contains(text(), 'Faded Short Sleeve T-shirts')]")
     private WebElement ItemInTheCart; //  товар в корзине
 
-    @FindBy(xpath = "//a[@id='3_13_0_0']")
+    @FindBy(xpath = "//a[@title='Delete']")
     private WebElement removeItemButton;
 
     @FindBy(xpath = "//span[@id='summary_products_quantity']")
