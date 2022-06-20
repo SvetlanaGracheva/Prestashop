@@ -39,24 +39,29 @@ public class CartPage extends Page {
 
     public String descriptionItemInTheCart() {
         log.info("GetTing the Product description In the Shopping Cart");
-        return ItemInTheCart.getText(); // получить название товара в корзине
+        Waiter.waitVisibilityOfElement(driver,ItemInTheCart);
+        return ItemInTheCart.getText();
     }
 
     public String getCountOfItemsInTheCart() {
         log.info("Getting count of items in the cart");
+        Waiter.waitVisibilityOfElement(driver,countOfItemInTheCart);
         return countOfItemInTheCart.getText();
     }
     public void clickRemoveButton(){
         log.info("Clicking on the button remove");
+        Waiter.waitVisibilityOfElement(driver,removeItemButton);
         removeItemButton.click();}
 
     public void clickOnLogoutButton() {
         log.info("Clicking on the logout button");
+        Waiter.waitVisibilityOfElement(driver,logoutButton);
         logoutButton.click();
     }
 
     public String getTextOfLoginButton() {
         log.info("Getting text of button");
+        Waiter.waitVisibilityOfElement(driver,loginButton);
         return loginButton.getText();
     }
 

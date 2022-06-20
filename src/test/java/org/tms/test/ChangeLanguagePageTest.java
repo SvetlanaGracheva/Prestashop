@@ -32,7 +32,7 @@ public class ChangeLanguagePageTest extends BaseTest {
     public void changeTheLanguageOnTheWebsiteTest(){
         myAccountService.changeTheLanguageOnTheWebsite();
         String actualLanguageName= myAccountService.getTextLanguageOnTheSite();
-        String expectedLanguageName= "Українська";
+        String expectedLanguageName= "Русский";
         Assert.assertEquals(actualLanguageName,expectedLanguageName,"The language on the page is incorrect");
 
     }

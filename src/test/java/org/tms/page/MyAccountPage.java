@@ -32,13 +32,13 @@ public class MyAccountPage extends Page {
     @FindBy(xpath = "//ul[@id='first-languages']//li[@class='selected']")
     private WebElement languageSelectionButton; //выбор язвка
 
-    @FindBy(xpath = " //div[@id='languages-block-top']")
+    @FindBy(xpath = " //div[@class='languages-block']")
     private WebElement languageOnTheSite;
 
-    @FindBy(xpath = "//input[@id='id_currency']")
+    @FindBy(xpath = "//div[@class='current active']")
     private WebElement currencyListButton;
 
-    @FindBy(xpath = "//a[@href='javascript:setCurrency(2);']")
+    @FindBy(xpath = "//a[@href='javascript:setCurrency(1);']")
     private WebElement currencySelectionButton; //выбор валюты
 
     @FindBy(xpath = "//strong[contains(text(), 'EUR')]")
@@ -71,6 +71,7 @@ public class MyAccountPage extends Page {
     }
     public void clickLanguageListButton() {
         log.info("Clicking the language list");
+        Waiter.waitVisibilityOfElement(driver,languageListButton);
         languageListButton.click();
     }
 
@@ -82,11 +83,13 @@ public class MyAccountPage extends Page {
 
     public String getTextLanguageOnTheSite() {
         log.info("Getting language received on the top line");
+        Waiter.waitVisibilityOfElement(driver,languageOnTheSite);
         return languageOnTheSite.getText();
     }
 
     public void clickCurrencyListButton() {
         log.info("Clicking the currency list");
+        Waiter.waitVisibilityOfElement(driver,currencyListButton);
         currencyListButton.click();// клик список валюты
     }
 
@@ -99,6 +102,7 @@ public class MyAccountPage extends Page {
 
     public String getTextCurrencyOnTheSite() {
         log.info("Getting currency received on the top line");
+        Waiter.waitVisibilityOfElement(driver,currencyOnTheSite);
         return currencyOnTheSite.getText();
     }
 

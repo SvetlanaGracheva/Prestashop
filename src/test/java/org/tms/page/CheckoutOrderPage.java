@@ -13,7 +13,7 @@ public class CheckoutOrderPage extends Page {
     @FindBy(xpath = "//button[@name='processAddress']")
     private WebElement proceedCheckoutButton;
 
-    @FindBy(xpath = "//input[@value='1']")
+    @FindBy(xpath = "//input[@id='cgv']")
     private WebElement consentCheckbox;
 
     @FindBy(xpath = "//button[@name='processCarrier']")
@@ -30,12 +30,15 @@ public class CheckoutOrderPage extends Page {
 
     public void clickOnProceedToCheckoutButton() {
       log.info("Clicking on the proceed to checkout button");
-        proceedToCheckoutButton.click();
+        Waiter.waitVisibilityOfElement(driver,proceedCheckoutButton);
+        proceedCheckoutButton.click();
     }
 
     public void choosingTheTypeOfDelivery() {
        log.info("Choosing the type of delivery");
+        Waiter.waitVisibilityOfElement(driver,consentCheckbox);
         consentCheckbox.click();
+
     }
 
     public void clickOnProceedToCheckoutButtonAfterAgreementOfTermsOfServices() {
